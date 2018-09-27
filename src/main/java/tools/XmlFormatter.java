@@ -26,6 +26,7 @@ public class XmlFormatter implements Formatter {
             logger.info("XML file converted to String.");
             //System.out.println(content);
             logger.info("Converting String to Object...");
+            logger.info("test git changes in klasse");
             StringReader stringReader = new StringReader(content);
             return JAXB.unmarshal(stringReader, Shop.class);
         } catch (Exception ex) {
