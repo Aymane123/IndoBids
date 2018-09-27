@@ -14,11 +14,9 @@ public class Category {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
-    @XmlElement(name="id")
     private String categoryId;
 
-    @XmlElement(name="parent_id")
-    private String parent_caterogy;
+    private String parent_category;
 
     //@OneToMany(fetch = FetchType.EAGER, mappedBy = "category")
     //@Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
@@ -53,16 +51,16 @@ public class Category {
         return categoryId;
     }
 
-    public String getParent_caterogy() {
-        return parent_caterogy;
+    public String getParent_category() {
+        return parent_category;
     }
 
     public void setCategoryId(String categoryId) {
         this.categoryId = categoryId;
     }
 
-    public void setParent_caterogy(String parent_caterogy) {
-        this.parent_caterogy = parent_caterogy;
+    public void setParent_category(String parent_category) {
+        this.parent_category = parent_category;
     }
 
     public void setShop(Shop shop) {

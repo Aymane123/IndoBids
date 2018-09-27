@@ -14,50 +14,43 @@ public class Offer {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
-    @XmlElement(name="id")
     private String offerId;
     private String url;
     private double price;
-    @XmlElement(name="oldprice")
     private double old_price;
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    /*@ManyToOne(fetch = FetchType.EAGER)
     @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
     @JoinColumn(name = "CURRENCY_ID",nullable = false)
-    @XmlElement(name="currencyId")
-    private Currency currency;
+    private Currency currency;*/
 
-    @XmlElement(name="delivery")
     private boolean isDeliverable;
     private String name;
     private String vendor;
     private String vendorCode;
     private String model;
     private String description;
-    @XmlElement(name="manufacturer_warranty")
     private boolean hasWarranty;
     private boolean isAvailable;
 
     @ManyToOne(fetch = FetchType.EAGER)
     @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
     @JoinColumn(name = "CATEGORY_ID",nullable = false)
-    @XmlElement(name="categoryId")
     private Category category;
 
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "offer")
     @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
-    @XmlElement(name="picture")
     private List<Picture> pictures;
 
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "offer")
     @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
-    @XmlElement(name="param")
     private List<OfferParameter> offerParameters;
+
 
     public Offer() {
 
     }
-
+/*
     public Currency getCurrency() {
         return currency;
     }
@@ -65,7 +58,7 @@ public class Offer {
     public void setCurrency(Currency currency) {
         this.currency = currency;
     }
-
+*/
     public void setVendorCode(String vendorCode) {
         this.vendorCode = vendorCode;
     }

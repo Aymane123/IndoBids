@@ -12,9 +12,7 @@ public class Currency {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
-    @XmlElement(name="id")
     private String currencyId;
-    @XmlElement(name="rate")
     private double rate;
     @ManyToOne(fetch = FetchType.EAGER)
     @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
@@ -46,5 +44,13 @@ public class Currency {
 
     public void setShop(Shop shop) {
         this.shop = shop;
+    }
+
+    public String getCurrencyId() {
+        return currencyId;
+    }
+
+    public void setCurrencyId(String currencyId) {
+        this.currencyId = currencyId;
     }
 }

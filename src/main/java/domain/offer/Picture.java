@@ -10,7 +10,6 @@ public class Picture {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
-    @XmlElement(name="picture")
     private String url;
 
     @ManyToOne(fetch = FetchType.EAGER)
