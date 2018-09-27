@@ -5,6 +5,7 @@ import domain.offer.Offer;
 import domain.shop.Currency;
 import domain.shop.Shop;
 import org.hibernate.annotations.Cascade;
+import tools.CustomAdapter;
 
 import javax.persistence.*;
 import javax.xml.bind.annotation.XmlElement;
