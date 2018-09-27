@@ -1,7 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="262f9eb4-d677-44f0-a2df-28ebceed9997" name="Default Changelist" comment="" />
+    <list default="true" id="262f9eb4-d677-44f0-a2df-28ebceed9997" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gradle/4.8/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/vcsWorkingDirs/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/IndoBidsTester.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/IndobidsApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/controller/IndoBidsController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/domain/catalogus/Catalog.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/domain/category/Category.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/domain/category/Subcategory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/domain/offer/Offer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/domain/offer/OfferParameter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/domain/offer/Picture.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/domain/shop/Currency.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/domain/shop/Shop.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/exception/FormatterException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/exception/InputException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/exception/InputReaderException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/service/InputService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/service/XmlInputService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/tools/Formatter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/tools/XmlFormatter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/resources/2018-08-26_gear_best_5b3b041a7c4b9622d4722ebd.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/IndoBidsTester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/IndobidsApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/IndoBidsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/domain/catalogus/Catalog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/domain/category/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/domain/category/Subcategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/domain/offer/Offer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/domain/offer/OfferParameter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/domain/offer/Picture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/domain/shop/Currency.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/domain/shop/Shop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/exception/FormatterException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/exception/InputException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/exception/InputReaderException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/InputService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/XmlInputService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tools/Formatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tools/XmlFormatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/2018-08-26_gear_best_5b3b041a7c4b9622d4722ebd.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -207,7 +267,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/service/XmlInputService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
+            <state relative-caret-position="46">
               <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -323,6 +383,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
@@ -731,6 +794,7 @@
     <option name="width" value="1392" />
     <option name="height" value="1041" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -908,9 +972,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26639676" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26639676" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -919,14 +982,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3285968" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29307282" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.40142095" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39964476" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.7175844" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.3285968" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3285968" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -1267,7 +1330,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/service/XmlInputService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
+        <state relative-caret-position="46">
           <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="imports" expanded="true" />
