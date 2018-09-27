@@ -6,10 +6,11 @@ import javax.persistence.*;
 
 @Entity
 public class OfferParameter {
+    /*
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
-
+*/
     private String name;
     private String value;
 
@@ -29,11 +30,11 @@ public class OfferParameter {
     public void setName(String name) {
         this.name = name;
     }
-
+/*
     public int getId() {
         return id;
     }
-
+*/
     public String getValue() {
         return value;
     }
@@ -41,11 +42,11 @@ public class OfferParameter {
     public Offer getOffer() {
         return offer;
     }
-
+/*
     public void setId(int id) {
         this.id = id;
     }
-
+*/
     public void setValue(String value) {
         this.value = value;
     }

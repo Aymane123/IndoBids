@@ -3,21 +3,22 @@ package domain.catalogus;
 import domain.category.Category;
 import domain.offer.Offer;
 import domain.shop.Currency;
+import domain.shop.Shop;
 import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.util.List;
 
 @XmlRootElement(name = "yml_catalog")
 public class CatalogTester {
-    private String shop;
+    private Shop shop;
     private String name;
     private String company;
     private String url;
-    private double local_delivery_cost;
-    private List<Currency> currencies;
+    //@XmlJavaTypeAdapter(CustomAdapter.class)
     private List<Category> categories;
     private List<Offer> offers;
 
@@ -25,7 +26,7 @@ public class CatalogTester {
 
     }
 
-    public String getShop() {
+    public Shop getShop() {
         return shop;
     }
 
@@ -41,14 +42,6 @@ public class CatalogTester {
         return url;
     }
 
-    public double getLocal_delivery_cost() {
-        return local_delivery_cost;
-    }
-
-    public List<Currency> getCurrencies() {
-        return currencies;
-    }
-
     public List<Category> getCategories() {
         return categories;
     }
@@ -57,7 +50,7 @@ public class CatalogTester {
         return offers;
     }
 
-    public void setShop(String shop) {
+    public void setShop(Shop shop) {
         this.shop = shop;
     }
 
@@ -71,14 +64,6 @@ public class CatalogTester {
 
     public void setUrl(String url) {
         this.url = url;
-    }
-
-    public void setLocal_delivery_cost(double local_delivery_cost) {
-        this.local_delivery_cost = local_delivery_cost;
-    }
-
-    public void setCurrencies(List<Currency> currencies) {
-        this.currencies = currencies;
     }
 
     public void setCategories(List<Category> categories) {

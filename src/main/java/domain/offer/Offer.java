@@ -4,40 +4,41 @@ import domain.category.Category;
 import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-import java.util.Currency;
 import java.util.List;
 
 @Entity
 public class Offer {
-    @Id
+   /* @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
-    private String offerId;
+    */
+    private String id;
     private String url;
     private double price;
-    private double old_price;
+    private double oldprice;
+    private String currencyId;
+    private String categoryId;
 
     /*@ManyToOne(fetch = FetchType.EAGER)
     @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
     @JoinColumn(name = "CURRENCY_ID",nullable = false)
     private Currency currency;*/
 
-    private boolean isDeliverable;
+    private boolean delivery;
     private String name;
     private String vendor;
     private String vendorCode;
     private String model;
     private String description;
-    private boolean hasWarranty;
-    private boolean isAvailable;
+    private boolean manufacturer_warranty;
+    private boolean available;
 
+    /*
     @ManyToOne(fetch = FetchType.EAGER)
     @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
     @JoinColumn(name = "CATEGORY_ID",nullable = false)
     private Category category;
-
+*/
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "offer")
     @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
     private List<Picture> pictures;
@@ -67,7 +68,7 @@ public class Offer {
         return vendorCode;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
@@ -79,12 +80,12 @@ public class Offer {
         return price;
     }
 
-    public double getOld_price() {
-        return old_price;
+    public double getOldprice() {
+        return oldprice;
     }
 
-    public boolean isDeliverable() {
-        return isDeliverable;
+    public boolean isDelivery() {
+        return delivery;
     }
 
     public String getName() {
@@ -103,18 +104,18 @@ public class Offer {
         return description;
     }
 
-    public boolean isHasWarranty() {
-        return hasWarranty;
+    public boolean isManufacturer_warranty() {
+        return manufacturer_warranty;
     }
 
     public boolean isAvailable() {
-        return isAvailable;
+        return available;
     }
-
+/*
     public Category getCategory() {
         return category;
     }
-
+*/
     public List<Picture> getPictures() {
         return pictures;
     }
@@ -123,7 +124,7 @@ public class Offer {
         return offerParameters;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -135,12 +136,12 @@ public class Offer {
         this.price = price;
     }
 
-    public void setOld_price(double old_price) {
-        this.old_price = old_price;
+    public void setOldprice(double oldprice) {
+        this.oldprice = oldprice;
     }
 
-    public void setDeliverable(boolean deliverable) {
-        isDeliverable = deliverable;
+    public void setDelivery(boolean delivery) {
+        this.delivery = delivery;
     }
 
     public void setName(String name) {
@@ -159,18 +160,18 @@ public class Offer {
         this.description = description;
     }
 
-    public void setHasWarranty(boolean hasWarranty) {
-        this.hasWarranty = hasWarranty;
+    public void setManufacturer_warranty(boolean manufacturer_warranty) {
+        this.manufacturer_warranty = manufacturer_warranty;
     }
 
     public void setAvailable(boolean available) {
-        isAvailable = available;
+        this.available = available;
     }
-
+/*
     public void setCategory(Category category) {
         this.category = category;
     }
-
+*/
     public void setPictures(List<Picture> pictures) {
         this.pictures = pictures;
     }
@@ -180,10 +181,27 @@ public class Offer {
     }
 
     public String getOfferId() {
-        return offerId;
+        return id;
+    }
+/*
+    public void setOfferId(String offerId) {
+        this.id = id;
+    }
+    */
+
+    public void setCurrencyId(String currencyId) {
+        this.currencyId = currencyId;
     }
 
-    public void setOfferId(String offerId) {
-        this.offerId = offerId;
+    public void setCategoryId(String categoryId) {
+        this.categoryId = categoryId;
+    }
+
+    public String getCurrencyId() {
+        return currencyId;
+    }
+
+    public String getCategoryId() {
+        return categoryId;
     }
 }

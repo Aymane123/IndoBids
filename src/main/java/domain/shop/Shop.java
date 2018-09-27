@@ -14,6 +14,7 @@ public class Shop {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
     private String name;
+    private String company;
     private String url;
     private double local_delivery_cost;
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "currency")
@@ -25,6 +26,22 @@ public class Shop {
 
     public Shop() {
 
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setCompany(String company) {
+        this.company = company;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    public String getCompany() {
+        return company;
     }
 
     public int getId() {

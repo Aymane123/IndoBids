@@ -33,7 +33,7 @@ public class XmlFormatterCatalog {
             XMLStreamReader xsr = xif.createXMLStreamReader(new StreamSource(inputString));
 
             Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
-            StringReader reader = new StringReader(content);
+            //StringReader reader = new StringReader(content);
             CatalogTester catalogTester = (CatalogTester) unmarshaller.unmarshal(xsr);
             return catalogTester;
         } catch (Exception ex) {
