@@ -24,7 +24,9 @@ public class XmlFormatter implements Formatter {
     public Catalog formatToObject(String inputString) throws FormatterException {
         try {
             logger.info("Converting XML file to String...");
-            String content = new String(Files.readAllBytes(Paths.get(inputString)));
+            String inputFile = "C:\\Users\\School\\Desktop\\SCHOOL jaar 4\\STAGEPROJECT\\stageProject\\Indobids\\src\\main\\resources\\2018-08-26_gear_best_5b3b041a7c4b9622d4722ebd.xml";
+
+            String content = new String(Files.readAllBytes(Paths.get(inputFile)));
             logger.info("XML file converted to String...");
             logger.info("Converting String to Object...");
 
