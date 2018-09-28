@@ -1,43 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="262f9eb4-d677-44f0-a2df-28ebceed9997" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/domain/catalogus/CatalogOld.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/domain/wrappers/CategoryWrapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/domain/wrappers/CurrencyWrapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/domain/wrappers/OfferWrapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/IndoBidsTester.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/IndoBidsTester.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/controller/IndoBidsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/controller/IndoBidsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/domain/catalogus/Catalog.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/domain/catalogus/Catalog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/domain/category/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/domain/category/Category.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/domain/offer/Offer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/domain/offer/Offer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/domain/offer/OfferParameter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/domain/offer/OfferParameter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/domain/offer/Picture.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/domain/offer/Picture.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/domain/shop/Currency.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/domain/shop/Currency.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/domain/shop/Shop.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/domain/shop/Shop.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/service/InputService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/service/InputService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/service/XmlInputService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/service/XmlInputService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/tools/XmlFormatter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/tools/XmlFormatter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/IndoBidsTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IndoBidsTester.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/IndoBidsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/IndoBidsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/catalogus/Catalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/catalogus/Catalog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/catalogus/CatalogTester.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/category/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/category/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/offer/Offer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/offer/Offer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/offer/OfferParameter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/offer/OfferParameter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/offer/Picture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/offer/Picture.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/shop/Currency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/shop/Currency.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/shop/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/shop/Shop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/InputService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/InputService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/XmlInputService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/XmlInputService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tools/CustomAdapter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tools/Formatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tools/Formatter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tools/XmlFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tools/XmlFormatter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tools/XmlFormatterCatalog.java" beforeDir="false" />
-    </list>
+    <list default="true" id="262f9eb4-d677-44f0-a2df-28ebceed9997" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -81,7 +45,7 @@
     <session id="-1537234368">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.24" value="1" />
@@ -224,7 +188,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/service/XmlInputService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="107">
-              <caret line="23" column="39" lean-forward="true" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+              <caret line="22" column="39" lean-forward="true" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#710#711#0" expanded="true" />
@@ -239,8 +203,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/tools/Formatter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+            <state relative-caret-position="170">
+              <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -869,7 +833,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538111022698" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538111215889" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
@@ -923,9 +887,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4991119" visible="true" weight="0.254251" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4991119" visible="true" weight="0.254251" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -935,11 +898,11 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3285968" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.37833038" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.42984015" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.42984015" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.30017763" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.30017763" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.3285968" />
@@ -1322,7 +1285,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/service/XmlInputService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="107">
-          <caret line="23" column="39" lean-forward="true" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+          <caret line="22" column="39" lean-forward="true" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#710#711#0" expanded="true" />
@@ -1335,8 +1298,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tools/Formatter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+        <state relative-caret-position="170">
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
