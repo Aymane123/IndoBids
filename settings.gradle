@@ -1,2 +1,4 @@
 rootProject.name = 'com.indobids'
+include 'frontend'
+include 'backend'
 

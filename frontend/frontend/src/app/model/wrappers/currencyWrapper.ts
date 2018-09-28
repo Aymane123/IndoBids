@@ -1,0 +1,3 @@
+class CurrenxyWrapper {
+  currencies: Currency[];
+}

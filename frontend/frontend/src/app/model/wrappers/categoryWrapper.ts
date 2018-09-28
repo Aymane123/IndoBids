@@ -1,0 +1,3 @@
+class CategoryWrapper {
+  categories: Category[];
+}

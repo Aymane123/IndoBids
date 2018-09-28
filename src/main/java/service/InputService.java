@@ -1,7 +1,8 @@
 package service;
 
 import domain.catalogus.Catalog;
-import exception.InputException;
+import exception.FileInputException;
+import repository.CatalogRepository;
 import tools.Formatter;
 
 /**
@@ -11,18 +12,20 @@ public interface InputService {
     /**
      * Start the service with a defined Formatter
      */
-    void start(String inputFile) throws InputException;
+    void start(String inputFile) throws FileInputException;
 
     /**
      * Setup communication with the service (new formatter,...)
      */
-    void initialize(Formatter formatter) throws InputException;
+    void initialize(Formatter formatter, CatalogRepository catalogRepository) throws FileInputException;
 
     /**
      * End communication (release connection,...)
      */
-    void shutdown() throws InputException;
+    void shutdown() throws FileInputException;
 
-    Catalog getCatalog(String inputFile);
+    Catalog getCatalogById(int id);
+
+    Catalog getCatalogFromFile(String inputFile);
 
 }

@@ -10,10 +10,9 @@ import java.util.List;
 
 @Entity
 public class Offer {
-   /* @Id
+    @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
-    */
+    private int offer_id;
     private String id;
     private String url;
     private double price;
@@ -35,10 +34,9 @@ public class Offer {
     private boolean manufacturer_warranty;
     private String available;
 
-
     @ManyToOne(fetch = FetchType.EAGER)
     @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
-    @JoinColumn(name = "CATEGORY_ID",nullable = false)
+    @JoinColumn(name = "CATEGORY_ID", nullable = false)
     private Category category;
 
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "offer")
@@ -108,12 +106,12 @@ public class Offer {
         return available;
     }
 
-    @XmlElement(name="picture")
+    @XmlElement(name = "picture")
     public List<Picture> getPictures() {
         return pictures;
     }
 
-    @XmlElement(name="param")
+    @XmlElement(name = "param")
     public List<OfferParameter> getOfferParameters() {
         return offerParameters;
     }
@@ -161,11 +159,12 @@ public class Offer {
     public void setAvailable(String available) {
         this.available = available;
     }
-/*
-    public void setCategory(Category category) {
-        this.category = category;
-    }
-*/
+
+    /*
+        public void setCategory(Category category) {
+            this.category = category;
+        }
+    */
     public void setPictures(List<Picture> pictures) {
         this.pictures = pictures;
     }
@@ -197,5 +196,13 @@ public class Offer {
 
     public String getCategoryId() {
         return categoryId;
+    }
+
+    public int getOffer_id() {
+        return offer_id;
+    }
+
+    public void setOffer_id(int offer_id) {
+        this.offer_id = offer_id;
     }
 }

@@ -19,6 +19,7 @@ public class IndoBidsController {
         this.formatter = formatter;
     }
 
+    /*
     public void startConverting(String inputFile) {
         try {
             logger.info("Initializing inputservice...");
@@ -33,4 +34,5 @@ public class IndoBidsController {
     public Catalog getCatalog(String inputFule) {
         return this.inputService.getCatalog(inputFule);
     }
+    */
 }
