@@ -4,6 +4,8 @@ import domain.category.Category;
 import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
 import java.util.List;
 
 @Entity
@@ -31,14 +33,14 @@ public class Offer {
     private String model;
     private String description;
     private boolean manufacturer_warranty;
-    private boolean available;
+    private String available;
 
-    /*
+
     @ManyToOne(fetch = FetchType.EAGER)
     @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
     @JoinColumn(name = "CATEGORY_ID",nullable = false)
     private Category category;
-*/
+
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "offer")
     @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
     private List<Picture> pictures;
@@ -51,15 +53,7 @@ public class Offer {
     public Offer() {
 
     }
-/*
-    public Currency getCurrency() {
-        return currency;
-    }
 
-    public void setCurrency(Currency currency) {
-        this.currency = currency;
-    }
-*/
     public void setVendorCode(String vendorCode) {
         this.vendorCode = vendorCode;
     }
@@ -68,6 +62,7 @@ public class Offer {
         return vendorCode;
     }
 
+    @XmlAttribute
     public String getId() {
         return id;
     }
@@ -108,18 +103,17 @@ public class Offer {
         return manufacturer_warranty;
     }
 
-    public boolean isAvailable() {
+    @XmlAttribute
+    public String getAvailable() {
         return available;
     }
-/*
-    public Category getCategory() {
-        return category;
-    }
-*/
+
+    @XmlElement(name="picture")
     public List<Picture> getPictures() {
         return pictures;
     }
 
+    @XmlElement(name="param")
     public List<OfferParameter> getOfferParameters() {
         return offerParameters;
     }
@@ -164,7 +158,7 @@ public class Offer {
         this.manufacturer_warranty = manufacturer_warranty;
     }
 
-    public void setAvailable(boolean available) {
+    public void setAvailable(String available) {
         this.available = available;
     }
 /*

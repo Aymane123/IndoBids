@@ -3,30 +3,34 @@ package domain.shop;
 import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlAttribute;
 
 @Entity
-
+@XmlAccessorType(XmlAccessType.NONE)
 public class Currency {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
-    private String currencyId;
-    private double rate;
+    private String curr_id;
+    private String id;
+    private String rate;
+
     @ManyToOne(fetch = FetchType.EAGER)
     @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
-    @JoinColumn(name = "CURRENCY_ID",nullable = false)
+    @JoinColumn(name = "CURRENCY_ID", nullable = false)
     private Shop shop;
 
     public Currency() {
     }
 
-    public int getId() {
+    @XmlAttribute
+    public String getId() {
         return id;
     }
 
-    public double getRate() {
+    @XmlAttribute
+    public String getRate() {
         return rate;
     }
 
@@ -34,11 +38,7 @@ public class Currency {
         return shop;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public void setRate(double rate) {
+    public void setRate(String rate) {
         this.rate = rate;
     }
 
@@ -46,11 +46,11 @@ public class Currency {
         this.shop = shop;
     }
 
-    public String getCurrencyId() {
-        return currencyId;
+    public void setId(String id) {
+        this.id = id;
     }
 
-    public void setCurrencyId(String currencyId) {
-        this.currencyId = currencyId;
+    public void setCurr_id(String curr_id) {
+        this.curr_id = curr_id;
     }
 }

@@ -1,6 +1,7 @@
 package service;
 
 import domain.catalogus.Catalog;
+import domain.catalogus.CatalogOld;
 import exception.InputException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -39,5 +40,10 @@ public class XmlInputService implements InputService {
     @Override
     public void shutdown() throws InputException {
 
+    }
+
+    @Override
+    public Catalog getCatalog(String inputFile) {
+        return convertToShop(inputFile);
     }
 }

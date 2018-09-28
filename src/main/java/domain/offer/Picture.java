@@ -3,9 +3,12 @@ package domain.offer;
 import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
-import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlValue;
 
 @Entity
+@XmlAccessorType(XmlAccessType.NONE)
 public class Picture {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -24,6 +27,7 @@ public class Picture {
         return id;
     }
 
+    @XmlValue
     public String getUrl() {
         return url;
     }

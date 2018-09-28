@@ -1,11 +1,13 @@
 package domain.shop;
 
 import domain.category.Category;
+import domain.wrappers.CategoryWrapper;
+import domain.wrappers.CurrencyWrapper;
+import domain.wrappers.OfferWrapper;
 import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
 import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
 import java.util.List;
 
 @Entity
@@ -16,13 +18,18 @@ public class Shop {
     private String name;
     private String company;
     private String url;
-    private double local_delivery_cost;
+    private String local_delivery_cost;
+
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "currency")
     @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
-    private List<Currency> currencies;
+    private List<Currency> currencyList;
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "category")
     @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
-    private List<Category> categories;
+    private List<Category> categoryList;
+
+    private CurrencyWrapper currencies;
+    private CategoryWrapper categories;
+    private OfferWrapper offers;
 
     public Shop() {
 
@@ -52,16 +59,31 @@ public class Shop {
         return name;
     }
 
-    public double getLocal_delivery_cost() {
+    public String getLocal_delivery_cost() {
         return local_delivery_cost;
     }
 
-    public List<Currency> getCurrencies() {
+    @XmlElement(name = "currencies")
+    public CurrencyWrapper getCurrencies() {
         return currencies;
     }
 
-    public List<Category> getCategories() {
+    @XmlElement(name = "categories")
+    public CategoryWrapper getCategories() {
         return categories;
+    }
+
+    @XmlElement(name = "offers")
+    public OfferWrapper getOffers() {
+        return offers;
+    }
+
+    public void setOffers(OfferWrapper offers) {
+        this.offers = offers;
+    }
+
+    public void setCategories(CategoryWrapper categories) {
+        this.categories = categories;
     }
 
     public void setId(int id) {
@@ -72,15 +94,16 @@ public class Shop {
         this.name = name;
     }
 
-    public void setLocal_delivery_cost(double local_delivery_cost) {
+    public void setLocal_delivery_cost(String local_delivery_cost) {
         this.local_delivery_cost = local_delivery_cost;
     }
 
-    public void setCurrencies(List<Currency> currencies) {
+    public void setCurrencies(CurrencyWrapper currencies) {
         this.currencies = currencies;
     }
-
-    public void setCategories(List<Category> categories) {
-        this.categories = categories;
+/*
+    public void setCategories(List<Category> categoryList) {
+        this.categoryList = categoryList;
     }
+    */
 }

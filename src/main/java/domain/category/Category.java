@@ -1,22 +1,23 @@
 package domain.category;
 
-import domain.offer.Offer;
 import domain.shop.Shop;
 import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
-import javax.xml.bind.annotation.XmlElement;
-import java.util.List;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlValue;
 
 @Entity
+@XmlAccessorType(XmlAccessType.NONE)
 public class Category {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
-
     private String categoryId;
-
     private String parent_category;
+    private String value;
 
     //@OneToMany(fetch = FetchType.EAGER, mappedBy = "category")
     //@Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
@@ -28,7 +29,7 @@ public class Category {
 
     @ManyToOne(fetch = FetchType.EAGER)
     @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
-    @JoinColumn(name = "CATEGORY_ID",nullable = false)
+    @JoinColumn(name = "CATEGORY_ID", nullable = false)
     private Shop shop;
 
     public Category() {
@@ -47,10 +48,12 @@ public class Category {
         this.id = id;
     }
 
+    @XmlAttribute(name = "id")
     public String getCategoryId() {
         return categoryId;
     }
 
+    @XmlAttribute(name = "parent_id")
     public String getParent_category() {
         return parent_category;
     }
@@ -65,5 +68,14 @@ public class Category {
 
     public void setShop(Shop shop) {
         this.shop = shop;
+    }
+
+    @XmlValue
+    public String getValue() {
+        return value;
+    }
+
+    public void setValue(String value) {
+        this.value = value;
     }
 }

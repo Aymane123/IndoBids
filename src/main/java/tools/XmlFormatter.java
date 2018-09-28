@@ -6,11 +6,11 @@ import exception.FormatterException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.xml.bind.JAXB;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Unmarshaller;
-import java.io.File;
-import java.io.StringReader;
+import javax.xml.stream.XMLInputFactory;
+import javax.xml.stream.XMLStreamReader;
+import javax.xml.transform.stream.StreamSource;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
@@ -27,12 +27,12 @@ public class XmlFormatter implements Formatter {
             String content = new String(Files.readAllBytes(Paths.get(inputString)));
             logger.info("XML file converted to String...");
             logger.info("Converting String to Object...");
-
             JAXBContext jaxbContext = JAXBContext.newInstance(Catalog.class);
+            XMLInputFactory xif = XMLInputFactory.newFactory();
+            xif.setProperty(XMLInputFactory.SUPPORT_DTD, false);
+            XMLStreamReader xsr = xif.createXMLStreamReader(new StreamSource(inputString));
             Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
-
-            StringReader reader = new StringReader(content);
-            Catalog catalog = (Catalog) unmarshaller.unmarshal(reader);
+            Catalog catalog = (Catalog) unmarshaller.unmarshal(xsr);
             return catalog;
         } catch (Exception ex) {
             throw new FormatterException("Error during processing of the XML file...", ex);

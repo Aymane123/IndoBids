@@ -1,5 +1,6 @@
 package controller;
 
+import domain.catalogus.Catalog;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import service.InputService;
@@ -27,5 +28,9 @@ public class IndoBidsController {
         } catch (Exception ex) {
             logger.error("Could not start converting to Shop object...");
         }
+    }
+
+    public Catalog getCatalog(String inputFule) {
+        return this.inputService.getCatalog(inputFule);
     }
 }

@@ -1,5 +1,6 @@
 package service;
 
+import domain.catalogus.Catalog;
 import exception.InputException;
 import tools.Formatter;
 
@@ -21,5 +22,7 @@ public interface InputService {
      * End communication (release connection,...)
      */
     void shutdown() throws InputException;
+
+    Catalog getCatalog(String inputFile);
 
 }
