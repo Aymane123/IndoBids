@@ -1,7 +1,6 @@
 package service;
 
 import domain.catalogus.Catalog;
-import domain.catalogus.CatalogOld;
 import exception.InputException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

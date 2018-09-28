@@ -1,7 +1,6 @@
 package tools;
 
 import domain.catalogus.Catalog;
-import domain.catalogus.CatalogOld;
 import domain.shop.Shop;
 import exception.FormatterException;
 
