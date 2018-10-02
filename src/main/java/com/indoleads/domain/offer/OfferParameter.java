@@ -43,9 +43,6 @@ public class OfferParameter {
         return offer;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public void setOffer(Offer offer) {
         this.offer = offer;

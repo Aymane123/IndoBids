@@ -2,22 +2,21 @@ package com.indoleads.domain.catalogus;
 
 import com.indoleads.domain.shop.Shop;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  * Catalog of the {@Shop} provided by the client
  */
 @XmlRootElement(name = "yml_catalog")
-@Entity
 public class Catalog {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
+    @Transient
+    @OneToOne(mappedBy = "catalog", cascade = CascadeType.ALL,
+            fetch = FetchType.EAGER, optional = false)
     private Shop shop;
 
     public Catalog() {

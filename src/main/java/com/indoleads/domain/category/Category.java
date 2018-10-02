@@ -1,5 +1,6 @@
 package com.indoleads.domain.category;
 
+import com.indoleads.domain.offer.Offer;
 import com.indoleads.domain.shop.Shop;
 import org.hibernate.annotations.Cascade;
 
@@ -8,6 +9,7 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlValue;
+import java.util.List;
 
 @Entity
 @XmlAccessorType(XmlAccessType.NONE)
@@ -16,7 +18,7 @@ public class Category {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
-    private String categoryId;
+    private String categoryId; //nodig, deze ID wordt uit de XML file gehaald
     private String parent_category;
     private String value;
 
@@ -24,13 +26,13 @@ public class Category {
     //@Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
     //private List<Subcategory> subcategories;
 
-    //@OneToMany(fetch = FetchType.EAGER, mappedBy = "offer")
-    //@Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
-    //private List<OfferRepository> offers;
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "category")
+    @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
+    private List<Offer> offers;
 
     @ManyToOne(fetch = FetchType.EAGER)
     @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
-    @JoinColumn(name = "CAT_ID", nullable = false)
+    @JoinColumn(name = "SHOP_ID", nullable = false)
     private Shop shop;
 
     public Category() {
@@ -45,9 +47,6 @@ public class Category {
         return shop;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
 
     @XmlAttribute(name = "id")
     public String getCategoryId() {
@@ -78,5 +77,13 @@ public class Category {
 
     public void setValue(String value) {
         this.value = value;
+    }
+
+    public List<Offer> getOffers() {
+        return offers;
+    }
+
+    public void setOffers(List<Offer> offers) {
+        this.offers = offers;
     }
 }

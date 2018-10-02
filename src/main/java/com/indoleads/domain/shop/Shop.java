@@ -1,5 +1,6 @@
 package com.indoleads.domain.shop;
 
+import com.indoleads.domain.catalogus.Catalog;
 import com.indoleads.domain.category.Category;
 import com.indoleads.domain.wrappers.CategoryWrapper;
 import com.indoleads.domain.wrappers.CurrencyWrapper;
@@ -15,20 +16,32 @@ public class Shop {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
+
     private String name;
+
+    @Transient
     private String company;
+
     private String url;
     private String local_delivery_cost;
 
-    @OneToMany(fetch = FetchType.EAGER, mappedBy = "currency")
+    /*@OneToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "CAT_ID")
+    private Catalog catalog;*/
+
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "shop")
     @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
     private List<Currency> currencyList;
-    @OneToMany(fetch = FetchType.EAGER, mappedBy = "category")
+
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "shop")
     @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
     private List<Category> categoryList;
 
+    @Transient
     private CurrencyWrapper currencies;
+    @Transient
     private CategoryWrapper categories;
+    @Transient
     private OfferWrapper offers;
 
     public Shop() {
@@ -39,17 +52,11 @@ public class Shop {
         return url;
     }
 
-    public void setCompany(String company) {
-        this.company = company;
-    }
 
     public void setUrl(String url) {
         this.url = url;
     }
 
-    public String getCompany() {
-        return company;
-    }
 
     public int getId() {
         return id;
@@ -86,9 +93,6 @@ public class Shop {
         this.categories = categories;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public void setName(String name) {
         this.name = name;
@@ -101,9 +105,20 @@ public class Shop {
     public void setCurrencies(CurrencyWrapper currencies) {
         this.currencies = currencies;
     }
-/*
-    public void setCategories(List<Category> categoryList) {
+
+    public List<Category> getCategoryList() {
+        return categoryList;
+    }
+
+    public void setCategoryList(List<Category> categoryList) {
         this.categoryList = categoryList;
     }
-    */
+
+    public List<Currency> getCurrencyList() {
+        return currencyList;
+    }
+
+    public void setCurrencyList(List<Currency> currencyList) {
+        this.currencyList = currencyList;
+    }
 }

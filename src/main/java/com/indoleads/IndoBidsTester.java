@@ -2,8 +2,10 @@ package com.indoleads;
 
 
 import com.indoleads.controller.IndoBidsController;
+import com.indoleads.domain.catalogus.Catalog;
 import com.indoleads.service.CatalogService;
 import com.indoleads.service.InputService;
+import com.indoleads.service.PersistenceService;
 import com.indoleads.tools.Formatter;
 import com.indoleads.tools.XmlFormatter;
 
@@ -15,8 +17,10 @@ public class IndoBidsTester {
         InputService xmlInputService = new CatalogService();
         IndoBidsController indoBidsController = new IndoBidsController(xmlInputService, xmlFormatter);
         indoBidsController.startConverting(inputFile);
-        //Catalog catalog = indoBidsController.getCatalog(inputFile);
-        System.out.println("break");
+        Catalog catalog = indoBidsController.getCatalog(inputFile);
+
+
+
 
 /*
         String inputFile = "D:\\stageProject\\Indobids\\src\\main\\resources\\2018-08-26_gear_best_5b3b041a7c4b9622d4722ebd.xml";

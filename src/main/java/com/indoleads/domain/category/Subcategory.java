@@ -4,7 +4,7 @@ import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
 
-@Entity
+
 public class Subcategory {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

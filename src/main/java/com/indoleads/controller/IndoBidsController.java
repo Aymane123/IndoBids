@@ -3,6 +3,7 @@ package com.indoleads.controller;
 import com.indoleads.domain.catalogus.Catalog;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import com.indoleads.service.InputService;
 import com.indoleads.tools.Formatter;
@@ -16,6 +17,7 @@ public class IndoBidsController {
     private InputService inputService;
     private Formatter formatter;
 
+    @Autowired
     public IndoBidsController(InputService inputService, Formatter formatter) {
         this.inputService = inputService;
         this.formatter = formatter;

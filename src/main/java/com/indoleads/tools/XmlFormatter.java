@@ -5,6 +5,7 @@ import com.indoleads.domain.shop.Shop;
 import com.indoleads.exception.FormatterException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.context.annotation.Bean;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Unmarshaller;

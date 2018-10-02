@@ -17,7 +17,7 @@ public class Picture {
 
     @ManyToOne(fetch = FetchType.EAGER)
     @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
-    @JoinColumn(name = "OFFER_ID",nullable = false)
+    @JoinColumn(name = "OFFER_ID") //nullable = false weg
     private Offer offer;
 
     public Picture() {
@@ -34,10 +34,6 @@ public class Picture {
 
     public Offer getOffer() {
         return offer;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public void setUrl(String url) {

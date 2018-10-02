@@ -12,21 +12,23 @@ import javax.xml.bind.annotation.XmlAttribute;
 public class Currency {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private String curr_id;
+    private int id;
 
-    private String id;
+    @XmlAttribute(name = "id")
+    private String currencyId;
+
     private String rate;
 
     @ManyToOne(fetch = FetchType.EAGER)
     @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
-    @JoinColumn(name = "CURRENCY_ID", nullable = false)
+    @JoinColumn(name = "SHOP_ID", nullable = false)
     private Shop shop;
 
     public Currency() {
     }
 
     @XmlAttribute
-    public String getId() {
+    public int getId() {
         return id;
     }
 
@@ -47,11 +49,12 @@ public class Currency {
         this.shop = shop;
     }
 
-    public void setId(String id) {
-        this.id = id;
+
+    public String getCurrencyId() {
+        return currencyId;
     }
 
-    public void setCurr_id(String curr_id) {
-        this.curr_id = curr_id;
+    public void setCurrencyId(String currencyId) {
+        this.currencyId = currencyId;
     }
 }

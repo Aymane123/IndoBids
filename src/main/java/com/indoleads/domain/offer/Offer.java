@@ -12,9 +12,10 @@ import java.util.List;
 public class Offer {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int offer_id;
+    private int offerId;
 
     private String id;
+
     private String url;
 
 
@@ -33,6 +34,7 @@ public class Offer {
     private String name;
     private String vendor;
     private String vendorCode;
+    @Column(length = 500)
     private String model;
     private String description;
     private boolean manufacturer_warranty;
@@ -44,7 +46,7 @@ public class Offer {
     @JoinColumn(name = "CAT_ID",nullable = false)
     private Category category;
 
-    @OneToMany(fetch = FetchType.EAGER, mappedBy = "offer")
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "offer")
     @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
     private List<Picture> pictures;
 
@@ -121,9 +123,6 @@ public class Offer {
         return offerParameters;
     }
 
-    public void setId(String id) {
-        this.id = id;
-    }
 
     public void setUrl(String url) {
         this.url = url;
@@ -177,14 +176,7 @@ public class Offer {
         this.offerParameters = offerParameters;
     }
 
-    public String getOfferId() {
-        return id;
-    }
-/*
-    public void setOfferId(String offerId) {
-        this.id = id;
-    }
-    */
+
 
     public void setCurrencyId(String currencyId) {
         this.currencyId = currencyId;
@@ -201,7 +193,21 @@ public class Offer {
     public String getCategoryId() {
         return categoryId;
     }
-    public int getOffer_id() {
-        return offer_id;
+
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
+    }
+
+    public int getOfferId() {
+        return offerId;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 }

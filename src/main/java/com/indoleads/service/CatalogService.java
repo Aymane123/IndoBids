@@ -18,16 +18,13 @@ public class CatalogService implements InputService {
     public void start(String inputFile) throws InputException {
         logger.info("IXmlInputService started...");
         Catalog catalog = convertToShop(inputFile);
-        printShop(catalog);
     }
 
     public Catalog convertToShop(String inputFile) {
         return this.formatter.formatToObject(inputFile);
     }
 
-    public void printShop(Catalog catalog) {
-        System.out.println(catalog.getShop().getId() + " " + catalog.getShop().getName());
-    }
+
 
     @Override
     public void initialize(Formatter formatter) throws InputException {

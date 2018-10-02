@@ -2,58 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="262f9eb4-d677-44f0-a2df-28ebceed9997" name="Default Changelist" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/examples.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/repository/CatalogRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/repository/CategoryRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/repository/CurrencyRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/repository/OfferParameterRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/repository/OfferRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/repository/PictureRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/repository/ShopRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/repository/SubCategoryRepository.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/IndoBidsTester.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/IndobidsApplication.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/controller/IndoBidsController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/domain/catalogus/Catalog.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/domain/category/Category.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/domain/category/Subcategory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/domain/offer/Offer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/domain/offer/OfferParameter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/domain/offer/Picture.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/domain/shop/Currency.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/domain/shop/Shop.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/exception/FormatterException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/exception/InputException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/exception/InputReaderException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/service/InputService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/service/XmlInputService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/tools/Formatter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/tools/XmlFormatter.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/IndoBidsTester.java" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/IndoBidsTester.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/IndobidsApplication.java" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/IndobidsApplication.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/controller/IndoBidsController.java" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/controller/IndoBidsController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/domain/catalogus/Catalog.java" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/domain/catalogus/Catalog.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/domain/category/Category.java" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/domain/category/Category.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/domain/category/Subcategory.java" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/domain/category/Subcategory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/domain/offer/Offer.java" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/domain/offer/Offer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/domain/offer/OfferParameter.java" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/domain/offer/OfferParameter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/domain/offer/Picture.java" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/domain/offer/Picture.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/domain/shop/Currency.java" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/domain/shop/Currency.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/domain/shop/Shop.java" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/domain/shop/Shop.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/domain/wrappers/CategoryWrapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/domain/wrappers/CategoryWrapper.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/domain/wrappers/CurrencyWrapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/domain/wrappers/CurrencyWrapper.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/domain/wrappers/OfferWrapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/domain/wrappers/OfferWrapper.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/exception/FormatterException.java" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/exception/FormatterException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/exception/InputException.java" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/exception/InputException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/exception/InputReaderException.java" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/exception/InputReaderException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/service/InputService.java" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/service/InputService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/service/XmlInputService.java" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/service/CatalogService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/tools/Formatter.java" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/tools/Formatter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/tools/XmlFormatter.java" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/tools/XmlFormatter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/config/ApplicationConfig.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/controller/PersistenceController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/service/PersistenceService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/indoleads/IndoBidsTester.java" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/IndoBidsTester.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/indoleads/controller/IndoBidsController.java" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/controller/IndoBidsController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/indoleads/domain/catalogus/Catalog.java" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/domain/catalogus/Catalog.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/indoleads/domain/category/Category.java" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/domain/category/Category.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/indoleads/domain/category/Subcategory.java" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/domain/category/Subcategory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/indoleads/domain/offer/Offer.java" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/domain/offer/Offer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/indoleads/domain/offer/OfferParameter.java" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/domain/offer/OfferParameter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/indoleads/domain/offer/Picture.java" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/domain/offer/Picture.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/indoleads/domain/shop/Currency.java" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/domain/shop/Currency.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/indoleads/domain/shop/Shop.java" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/domain/shop/Shop.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/indoleads/repository/CatalogRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/repository/CatalogRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/indoleads/repository/CategoryRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/repository/CategoryRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/indoleads/repository/OfferParameterRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/repository/OfferParameterRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/indoleads/repository/OfferRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/repository/OfferRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/indoleads/repository/SubCategoryRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/repository/SubCategoryRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/indoleads/service/CatalogService.java" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/service/CatalogService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/indoleads/tools/Formatter.java" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/tools/Formatter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/indoleads/tools/XmlFormatter.java" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/tools/XmlFormatter.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -141,36 +111,60 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Shop.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/domain/shop/Shop.java">
+      <file leaf-file-name="Offer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/domain/offer/Offer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="13" column="19" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+            <state relative-caret-position="299">
+              <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#2560#2561#0" expanded="true" />
+                <element signature="e#2591#2592#0" expanded="true" />
+                <element signature="e#4507#4508#0" expanded="true" />
+                <element signature="e#4535#4536#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <file leaf-file-name="PersistenceService.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/service/PersistenceService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="74" lean-forward="false" selection-start-line="1" selection-start-column="74" selection-end-line="1" selection-end-column="74" />
+            <state relative-caret-position="276">
+              <caret line="91" column="32" lean-forward="false" selection-start-line="91" selection-start-column="32" selection-end-line="91" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#createShop#0;class#PersistenceService#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PictureRepository.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/repository/PictureRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="6" column="11" lean-forward="false" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Catalog.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/domain/catalogus/Catalog.java">
+      <file leaf-file-name="OfferRepository.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/repository/OfferRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="68">
+              <caret line="7" column="11" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JpaRepository.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-jpa/1.11.10.RELEASE/7a742dc18d6eeec24dfb52e948ee46ee4dd4c222/spring-data-jpa-1.11.10.RELEASE-sources.jar!/org/springframework/data/jpa/repository/JpaRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="109">
+              <caret line="43" column="12" lean-forward="false" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -178,8 +172,18 @@
       <file leaf-file-name="OfferParameter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/domain/offer/OfferParameter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state relative-caret-position="272">
+              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Category.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/domain/category/Category.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="20" column="41" lean-forward="false" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -188,60 +192,9 @@
       <file leaf-file-name="Picture.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/domain/offer/Picture.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+            <state relative-caret-position="192">
+              <caret line="19" column="57" lean-forward="false" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Currency.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/domain/shop/Currency.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding>
-                <element signature="e#793#794#0" expanded="true" />
-                <element signature="e#820#821#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Category.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/domain/category/Category.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Subcategory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/domain/category/Subcategory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding>
-                <element signature="e#603#604#0" expanded="true" />
-                <element signature="e#631#632#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Offer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/domain/offer/Offer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-17">
-              <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-              <folding>
-                <element signature="e#4460#4461#0" expanded="true" />
-                <element signature="e#4491#4492#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -623,21 +576,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/IndobidsApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/category/Subcategory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/shop/Currency.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/shop/Shop.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/category/Category.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/offer/OfferInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/offer/Offer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/offer/Picture.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/offer/OfferParameter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/exception/InputConversionException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/adapter/in/XmlInputReceiver.java" />
-        <option value="$PROJECT_DIR$/src/main/java/exception/LoaderException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/exception/InputReaderException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/service/LoaderService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/exception/FormatterException.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/InputService.java" />
         <option value="$PROJECT_DIR$/src/main/java/domain/category/Subcategory.java" />
         <option value="$PROJECT_DIR$/src/main/java/tools/Formatter.java" />
@@ -666,14 +604,29 @@
         <option value="$PROJECT_DIR$/src/main/java/repository/ShopRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/repository/SubCategoryRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/IndoBidsController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/indoleads/IndoBidsTester.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/indoleads/config/SSHConnection.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/indoleads/domain/catalogus/Catalog.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/indoleads/tools/Formatter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/indoleads/controller/IndoBidsController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/indoleads/config/ApplicationConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/indoleads/repository/OfferParameterRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/indoleads/domain/category/Subcategory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/indoleads/repository/SubCategoryRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/indoleads/repository/CatalogRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/indoleads/service/CatalogService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/indoleads/domain/catalogus/Catalog.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/indoleads/tools/XmlFormatter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/indoleads/domain/shop/Shop.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/indoleads/IndoBidsTester.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/indoleads/domain/shop/Currency.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/indoleads/domain/category/Category.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/indoleads/repository/CategoryRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/indoleads/domain/offer/Picture.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/indoleads/domain/offer/OfferParameter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/indoleads/domain/offer/Offer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/indoleads/repository/PictureRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/indoleads/repository/OfferRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/indoleads/service/PersistenceService.java" />
       </list>
     </option>
   </component>
@@ -684,9 +637,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-3" />
-    <option name="width" value="1929" />
-    <option name="height" value="1041" />
+    <option name="x" value="427" />
+    <option name="y" value="329" />
+    <option name="width" value="683" />
+    <option name="height" value="768" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -704,8 +658,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -738,6 +694,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="indoleads" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="com.indobids" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Indobids" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="indoleads" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="com.indobids" type="b2602c69:ProjectViewProjectNode" />
@@ -804,7 +769,35 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="indoleads" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="wrappers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="com.indobids" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Indobids" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="indoleads" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="com.indobids" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Indobids" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="indoleads" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="com.indobids" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Indobids" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="indoleads" type="462c0819:PsiDirectoryNode" />
+              <item name="tools" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="com.indobids" type="b2602c69:ProjectViewProjectNode" />
@@ -817,8 +810,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -842,6 +833,9 @@
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.indoleads.config" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\stageProject\Indobids\src\main\resources" />
@@ -915,15 +909,19 @@
       <workItem from="1538102341604" duration="3429000" />
       <workItem from="1538111938693" duration="117000" />
       <workItem from="1538112230236" duration="3394000" />
-      <workItem from="1538115861943" duration="8240000" />
+      <workItem from="1538115861943" duration="8870000" />
+      <workItem from="1538360604023" duration="22813000" />
+      <workItem from="1538389662064" duration="1717000" />
+      <workItem from="1538447410866" duration="21439000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12052000" />
+    <option name="totallyTimeSpent" value="58651000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -933,13 +931,13 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.47954175" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45826513" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2647504" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27609682" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -947,8 +945,8 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3633388" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39934534" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -965,127 +963,17 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="23" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="catalog.shop.categories.categories.get(0).shop" />
+        <watch expression="catalog" />
+        <watch expression="catalog.shop.categories.categories" />
       </configuration>
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-core/5.0.12.Final/bf593c18eacdead181ff26b4997d7ba8fcab93bd/hibernate-core-5.0.12.Final-sources.jar!/org/hibernate/annotations/CascadeType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/service/CatalogService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="e#812#813#0" expanded="true" />
-            <element signature="e#875#876#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/controller/IndoBidsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="33" lean-forward="false" selection-start-line="10" selection-start-column="33" selection-end-line="11" selection-end-column="78" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/IndoBidsTester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="54" lean-forward="true" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/exception/FormatterException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/tools/XmlFormatter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/offer/OfferInfo.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/adapter/in/XmlInputReceiver.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/exception/InputException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="4" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/exception/InputReaderException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/2018-08-26_gear_best_5b3b041a7c4b9622d4722ebd.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="27" lean-forward="false" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/exception/FormatterException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-core/5.0.12.Final/bf593c18eacdead181ff26b4997d7ba8fcab93bd/hibernate-core-5.0.12.Final-sources.jar!/org/hibernate/annotations/CascadeType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.1.11/2a2f78be7ef674b6486f7b5463f05f40da5e163/logback-classic-1.1.11-sources.jar!/ch/qos/logback/classic/Logger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="578" column="0" lean-forward="false" selection-start-line="578" selection-start-column="0" selection-end-line="578" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/service/InputService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="9" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/IndoBidsTester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/tools/XmlFormatter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1101,9 +989,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1125,77 +1011,138 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/domain/catalogus/CatalogTester.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/tools/XmlFormatterCatalog.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/tools/Formatter.java">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-          <folding />
+        <state relative-caret-position="322">
+          <caret line="30" column="47" lean-forward="false" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/tools/XmlFormatter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="31" column="64" lean-forward="true" selection-start-line="31" selection-start-column="64" selection-end-line="31" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/service/CatalogService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/config/SSHConnection.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/repository/OfferParameterRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+          <caret line="7" column="78" lean-forward="false" selection-start-line="7" selection-start-column="78" selection-end-line="7" selection-end-column="78" />
           <folding>
-            <element signature="e#812#813#0" expanded="true" />
-            <element signature="e#875#876#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/repository/CurrencyRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="11" lean-forward="false" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/domain/category/Subcategory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/4.3.14.RELEASE/c5a6bef4c10d616d2c34098270d874d24e7e30a1/spring-beans-4.3.14.RELEASE-sources.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="482" column="0" lean-forward="false" selection-start-line="482" selection-start-column="0" selection-end-line="482" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/repository/SubCategoryRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="38" lean-forward="false" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/repository/CatalogRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="11" lean-forward="false" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/repository/CategoryRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="11" lean-forward="false" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/repository/OfferParameterRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/repository/OfferRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+          <caret line="7" column="34" lean-forward="false" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/repository/PictureRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/service/InputService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="25" column="12" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/IndobidsApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="11" lean-forward="false" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/controller/PersistenceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="36" lean-forward="true" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/controller/IndoBidsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1272#1273#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/domain/wrappers/CurrencyWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" column="26" lean-forward="true" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+          <folding>
+            <element signature="e#309#310#0" expanded="false" />
+            <element signature="e#342#343#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/service/CatalogService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding>
+            <element signature="e#784#785#0" expanded="false" />
+            <element signature="e#847#848#0" expanded="false" />
+            <element signature="e#1292#1293#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/IndoBidsTester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/config/ApplicationConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="34" lean-forward="true" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#318#319#0" expanded="false" />
+            <element signature="e#359#360#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1208,151 +1155,204 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/repository/SubCategoryRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="11" lean-forward="false" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/controller/IndoBidsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" column="11" lean-forward="false" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/repository/CurrencyRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="11" lean-forward="false" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/IndoBidsTester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/IndobidsApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="30" column="47" lean-forward="false" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/config/SSHConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="70" lean-forward="true" selection-start-line="14" selection-start-column="70" selection-end-line="14" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="74" lean-forward="false" selection-start-line="1" selection-start-column="74" selection-end-line="1" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/domain/catalogus/Catalog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/domain/category/Subcategory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="e#603#604#0" expanded="true" />
-            <element signature="e#631#632#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/domain/offer/OfferParameter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/domain/offer/Picture.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        <state relative-caret-position="0">
+          <caret line="0" column="41" lean-forward="false" selection-start-line="0" selection-start-column="41" selection-end-line="0" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/domain/shop/Currency.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="e#793#794#0" expanded="true" />
-            <element signature="e#820#821#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="187">
+          <caret line="16" column="30" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/4.3.14.RELEASE/c5a6bef4c10d616d2c34098270d874d24e7e30a1/spring-beans-4.3.14.RELEASE-sources.jar!/org/springframework/beans/factory/support/ConstructorResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="278" column="0" lean-forward="false" selection-start-line="278" selection-start-column="0" selection-end-line="278" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/4.3.14.RELEASE/c5a6bef4c10d616d2c34098270d874d24e7e30a1/spring-beans-4.3.14.RELEASE-sources.jar!/org/springframework/beans/factory/support/DefaultSingletonBeanRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="241" column="0" lean-forward="false" selection-start-line="241" selection-start-column="0" selection-end-line="241" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/4.3.14.RELEASE/c5a6bef4c10d616d2c34098270d874d24e7e30a1/spring-beans-4.3.14.RELEASE-sources.jar!/org/springframework/beans/factory/support/AbstractBeanFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="362" column="0" lean-forward="false" selection-start-line="362" selection-start-column="0" selection-end-line="362" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/4.3.14.RELEASE/63fd73134126b6ae088666fb720f5437bcb39cfa/spring-context-4.3.14.RELEASE-sources.jar!/org/springframework/context/support/AbstractApplicationContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="549" column="0" lean-forward="false" selection-start-line="549" selection-start-column="0" selection-end-line="549" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/1.5.10.RELEASE/55c4f5b6081a9e271fbc0c051cfb529c93844291/spring-boot-1.5.10.RELEASE-sources.jar!/org/springframework/boot/context/embedded/EmbeddedWebApplicationContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="124" column="0" lean-forward="false" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/1.5.10.RELEASE/55c4f5b6081a9e271fbc0c051cfb529c93844291/spring-boot-1.5.10.RELEASE-sources.jar!/org/springframework/boot/SpringApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="313" column="0" lean-forward="false" selection-start-line="313" selection-start-column="0" selection-end-line="313" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-devtools/1.5.10.RELEASE/3d3f141ce866bcc2d3afa43990802c1c238fef2c/spring-boot-devtools-1.5.10.RELEASE-sources.jar!/org/springframework/boot/devtools/restart/RestartLauncher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/tools/Formatter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/tools/XmlFormatter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/domain/shop/Shop.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="13" column="19" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+        <state relative-caret-position="527">
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/domain/wrappers/OfferWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/domain/catalogus/Catalog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#599#600#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/domain/offer/Offer.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/4.3.14.RELEASE/c5a6bef4c10d616d2c34098270d874d24e7e30a1/spring-beans-4.3.14.RELEASE-sources.jar!/org/springframework/beans/BeanUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding>
-            <element signature="e#4460#4461#0" expanded="true" />
-            <element signature="e#4491#4492#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="237">
+          <caret line="153" column="0" lean-forward="false" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/repository/CategoryRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/domain/offer/Picture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="19" column="57" lean-forward="false" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/domain/category/Category.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+          <caret line="20" column="41" lean-forward="false" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/domain/offer/Offer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding>
+            <element signature="e#2560#2561#0" expanded="true" />
+            <element signature="e#2591#2592#0" expanded="true" />
+            <element signature="e#4507#4508#0" expanded="true" />
+            <element signature="e#4535#4536#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-jpa/1.11.10.RELEASE/7a742dc18d6eeec24dfb52e948ee46ee4dd4c222/spring-data-jpa-1.11.10.RELEASE-sources.jar!/org/springframework/data/jpa/repository/JpaRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="43" column="12" lean-forward="false" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/domain/offer/OfferParameter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/repository/OfferRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="11" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/repository/PictureRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="11" lean-forward="false" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/service/PersistenceService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="91" column="32" lean-forward="false" selection-start-line="91" selection-start-column="32" selection-end-line="91" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#createShop#0;class#PersistenceService#0" expanded="false" />
           </folding>
         </state>
       </provider>
