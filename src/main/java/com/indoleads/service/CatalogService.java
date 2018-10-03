@@ -1,6 +1,9 @@
 package com.indoleads.service;
 
 import com.indoleads.domain.catalogus.Catalog;
+import com.indoleads.domain.shop.Shop;
+import com.indoleads.exception.CommunicationException;
+import com.indoleads.exception.FileInputException;
 import com.indoleads.exception.InputException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,19 +18,22 @@ public class CatalogService implements InputService {
     private Logger logger = LoggerFactory.getLogger(CatalogService.class);
     private Formatter formatter;
 
-    public void start(String inputFile) throws InputException {
-        logger.info("IXmlInputService started...");
+    public void start(String inputFile) throws FileInputException {
+        logger.info("CatalogService started...");
         Catalog catalog = convertToShop(inputFile);
+        printShop(catalog);
     }
 
     public Catalog convertToShop(String inputFile) {
         return this.formatter.formatToObject(inputFile);
     }
 
+    public void printShop(Catalog catalog) {
+        System.out.println(catalog.getShop().getId() + " " + catalog.getShop().getName());
+    }
 
 
-    @Override
-    public void initialize(Formatter formatter) throws InputException {
+    public void initialize(Formatter formatter) throws FileInputException {
         try {
             this.formatter = formatter;
         } catch (Exception ex) {
@@ -36,12 +42,38 @@ public class CatalogService implements InputService {
     }
 
     @Override
-    public void shutdown() throws InputException {
+    public Shop getShopById(int shopId) {
+        try {
+            //return shopRepository.getShopById(shopId);
+            return null;
+        } catch (CommunicationException ex) {
+            logger.error("Could not get catalog from the database...");
+        }
+        return null;
+    }
 
+    /**
+     * Test method to test frontend without DB connection
+     */
+    @Override
+    public Shop getShopFromFile(String inputFile) {
+        return convertToShop(inputFile).getShop();
     }
 
     @Override
-    public Catalog getCatalog(String inputFile) {
-        return convertToShop(inputFile);
+    public void shutdown() throws FileInputException {
+
+    }
+
+    /*
+    temporary
+     */
+    public Catalog getCatalogById(int catalogId) {
+        try {
+            // return shopRepository.getShopById(shopId);
+        } catch (CommunicationException ex) {
+            logger.error("Could not get catalog from the database...");
+        }
+        return null;
     }
 }

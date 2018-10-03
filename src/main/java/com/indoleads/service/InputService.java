@@ -1,6 +1,8 @@
 package com.indoleads.service;
 
 import com.indoleads.domain.catalogus.Catalog;
+import com.indoleads.domain.shop.Shop;
+import com.indoleads.exception.FileInputException;
 import com.indoleads.exception.InputException;
 import com.indoleads.tools.Formatter;
 
@@ -9,20 +11,28 @@ import com.indoleads.tools.Formatter;
  */
 public interface InputService {
     /**
-     * Start the com.indoleads.service with a defined Formatter
+     * Start the service with a defined Formatter
      */
-    void start(String inputFile) throws InputException;
+    void start(String inputFile) throws FileInputException;
 
     /**
-     * Setup communication with the com.indoleads.service (new formatter,...)
+     * Setup communication with the service (new formatter,...)
      */
-    void initialize(Formatter formatter) throws InputException;
+    void initialize(Formatter formatter) throws FileInputException;
 
     /**
      * End communication (release connection,...)
      */
-    void shutdown() throws InputException;
+    void shutdown() throws FileInputException;
 
-    Catalog getCatalog(String inputFile);
+    /**
+     * Gets the shop from the catalog by ID
+     */
+    Shop getShopById(int id);
+
+    /**
+     * Gets the Shop from the catalog via a file
+     */
+    Shop getShopFromFile(String inputFile);
 
 }
