@@ -9,18 +9,25 @@ import com.indoleads.domain.shop.Currency;
 import com.indoleads.domain.shop.Shop;
 import com.indoleads.repository.*;
 import com.indoleads.tools.Formatter;
+import com.indoleads.tools.XmlFormatter;
 import org.hibernate.Hibernate;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 
+import javax.persistence.PersistenceContext;
+import javax.persistence.PersistenceContextType;
 import javax.transaction.Transactional;
 import java.util.ArrayList;
 import java.util.List;
 
 @Service
-@org.springframework.transaction.annotation.Transactional
+@PersistenceContext(type= PersistenceContextType.EXTENDED)
 public class PersistenceService {
+    private Logger logger = LoggerFactory.getLogger(XmlFormatter.class);
+
     private Formatter formatter;
     private ShopRepository shopRepository;
     private CategoryRepository categoryRepository;
@@ -89,7 +96,7 @@ public class PersistenceService {
     private void fillOfferTable(){
         List<Offer> offers = new ArrayList<>();
         //catalog.getShop().getOffers().getOffers().size()
-        for (int i = 0; i < 50; i++) {
+        for (int i = 0; i < catalog.getShop().getOffers().getOffers().size(); i++) {
             Offer offer = new Offer();
             offer.setId(catalog.getShop().getOffers().getOffers().get(i).getId());
             offer.setVendorCode(catalog.getShop().getOffers().getOffers().get(i).getVendorCode());
@@ -122,17 +129,23 @@ public class PersistenceService {
     private void fillPictureTable(){
         List<Picture> pictureList = new ArrayList<>();
         List<Offer> offers = offerRepository.findAll();
+
+
         for (Offer offer : offers) {
             for (Offer o : catalog.getShop().getOffers().getOffers()) {
                 if (offer.getId().equals(o.getId())){
-                    for (Picture picture : o.getPictures()) {
-                        Picture p = new Picture();
-                        p.setUrl(picture.getUrl());
-                        p.setOffer(offer);
-                        pictureList.add(p);
+
+                    if (o.getPictures() != null){
+                        for (Picture picture : o.getPictures()) {
+                            Picture p = new Picture();
+                            p.setUrl(picture.getUrl());
+                            p.setOffer(offer);
+                            pictureList.add(p);
+                        }
                     }
                 }
             }
+            logger.info("Pictures toegevoegd voor offer id" + offer.getId());
 
         }
         pictureRepository.save(pictureList);
@@ -142,21 +155,26 @@ public class PersistenceService {
     private void fillOfferParameterTable(){
         List<OfferParameter> offerParameterList = new ArrayList<>();
         List<Offer> offers = offerRepository.findAll();
-        for (Offer offer : offers) {
 
+        for (Offer offer : offers) {
             for (Offer o : catalog.getShop().getOffers().getOffers()) {
                 if (offer.getId().equals(o.getId())){
-                    for (OfferParameter offerParameter : o.getOfferParameters()) {
-                        OfferParameter op = new OfferParameter();
-                        op.setName(offerParameter.getName());
-                        op.setValue(offerParameter.getValue());
-                        op.setOffer(offer);
-                        offerParameterList.add(op);
+
+                    if (o.getOfferParameters() != null){
+                        for (OfferParameter offerParameter : o.getOfferParameters()) {
+                            OfferParameter op = new OfferParameter();
+                            op.setName(offerParameter.getName());
+                            op.setValue(offerParameter.getValue());
+                            op.setOffer(offer);
+                            offerParameterList.add(op);
+                        }
                     }
+
                 }
             }
 
         }
+
         offerParameterRepository.save(offerParameterList);
         offerParameterRepository.flush();
     }

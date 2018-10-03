@@ -46,11 +46,11 @@ public class Offer {
     @JoinColumn(name = "CAT_ID",nullable = false)
     private Category category;
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "offer")
+    @OneToMany(mappedBy = "offer")
     @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
     private List<Picture> pictures;
 
-    @OneToMany(fetch = FetchType.EAGER, mappedBy = "offer")
+    @OneToMany(mappedBy = "offer")
     @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
     private List<OfferParameter> offerParameters;
 
