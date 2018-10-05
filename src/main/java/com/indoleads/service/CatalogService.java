@@ -4,9 +4,10 @@ import com.indoleads.domain.catalogus.Catalog;
 import com.indoleads.domain.shop.Shop;
 import com.indoleads.exception.CommunicationException;
 import com.indoleads.exception.FileInputException;
-import com.indoleads.exception.InputException;
+import com.indoleads.repository.ShopRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.indoleads.tools.Formatter;
 
@@ -17,6 +18,7 @@ import com.indoleads.tools.Formatter;
 public class CatalogService implements InputService {
     private Logger logger = LoggerFactory.getLogger(CatalogService.class);
     private Formatter formatter;
+
 
     public void start(String inputFile) throws FileInputException {
         logger.info("CatalogService started...");
@@ -76,4 +78,6 @@ public class CatalogService implements InputService {
         }
         return null;
     }
+
+
 }

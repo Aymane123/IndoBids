@@ -1,24 +1,28 @@
 package com.indoleads.controller;
 
 
+import com.indoleads.domain.DTOs.ShopDTO;
 import com.indoleads.domain.catalogus.Catalog;
 import com.indoleads.domain.shop.Shop;
 import com.indoleads.service.CatalogService;
+import com.indoleads.service.ShopService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 /**
- * API Controller to handle requests for a {@Catalog}
+ * API Controller to handle requests for a {@Shop}
  */
 @RestController
-@RequestMapping("/api/catalog")
-public class CatalogController {
+@RequestMapping("/shop")
+public class ShopController {
+    private final ShopService shopService;
     private final CatalogService catalogService;
 
     @Autowired
-    public CatalogController(CatalogService catalogService) {
+    public ShopController(ShopService shopService, CatalogService catalogService) {
+        this.shopService = shopService;
         this.catalogService = catalogService;
     }
 
@@ -64,6 +68,25 @@ public class CatalogController {
         //String target = catalogService.getTargetUrlForOffer()
         //String target = shop.getOffers().getOffers().
         return ResponseEntity.ok(shop.getName());
+    }
+
+
+    @GetMapping("/getShopTest")
+    public ResponseEntity<ShopDTO> getShopTest(){
+        Shop shop = shopService.getShop();
+        ShopDTO shopDTO;
+
+        if (shop != null) {
+            shopDTO = new ShopDTO();
+            shopDTO.setId(shop.getId());
+            shopDTO.setName(shop.getName());
+            shopDTO.setUrl(shop.getUrl());
+            shopDTO.setLocal_delivery_cost(shop.getLocal_delivery_cost());
+            return new ResponseEntity<ShopDTO>(shopDTO, HttpStatus.CREATED);
+        }
+        return new ResponseEntity<ShopDTO>(HttpStatus.NOT_ACCEPTABLE);
+
+
     }
 
 }
