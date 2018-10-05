@@ -71,8 +71,6 @@ public class PersistenceService {
             currency.setRate(catalog.getShop().getCurrencies().getCurrencies().get(i).getRate());
             currency.setCurrencyId(catalog.getShop().getCurrencies().getCurrencies().get(i).getCurrencyId());
             currencyRepository.save(currency);
-
-
         }
         currencyRepository.flush();
     }
@@ -116,8 +114,11 @@ public class PersistenceService {
             offer.setPictures(catalog.getShop().getOffers().getOffers().get(i).getPictures());
             offer.setOfferParameters(catalog.getShop().getOffers().getOffers().get(i).getOfferParameters());
 
-            Category category = categoryRepository.findByCategoryId(offer.getCategoryId());
-            offer.setCategory(category);
+            /*Category category = categoryRepository.findByCategoryId(offer.getCategoryId());
+            offer.setCategory(category);*/ //TE VERANDEREN!!!
+
+            List<Category> categories = categoryRepository.findByCategoryId(offer.getCategoryId());
+            offer.setCategories(categories);
 
             offers.add(offer);
         }

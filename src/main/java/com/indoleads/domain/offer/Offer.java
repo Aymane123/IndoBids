@@ -2,6 +2,8 @@ package com.indoleads.domain.offer;
 
 import com.indoleads.domain.category.Category;
 import org.hibernate.annotations.Cascade;
+import org.hibernate.annotations.LazyCollection;
+import org.hibernate.annotations.LazyCollectionOption;
 
 import javax.persistence.*;
 import javax.xml.bind.annotation.XmlAttribute;
@@ -41,10 +43,20 @@ public class Offer {
     private String available;
 
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    /*@ManyToOne(fetch = FetchType.EAGER) //DIT VERANDEREN!!!
     @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
     @JoinColumn(name = "CAT_ID",nullable = false)
-    private Category category;
+    private Category category;*/
+
+    @ManyToMany
+    @JoinTable(
+            name = "offers_categories",
+            joinColumns = @JoinColumn(
+                    name = "offer_offerId", referencedColumnName = "offerId"),
+            inverseJoinColumns = @JoinColumn(
+                    name = "category_id", referencedColumnName = "id"))
+    @LazyCollection(value = LazyCollectionOption.FALSE)
+    private List<Category> categories;
 
     @OneToMany(mappedBy = "offer")
     @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
@@ -195,13 +207,13 @@ public class Offer {
     }
 
 
-    public Category getCategory() {
+    /*public Category getCategory() {
         return category;
     }
 
     public void setCategory(Category category) {
         this.category = category;
-    }
+    }*/
 
     public int getOfferId() {
         return offerId;
@@ -209,5 +221,13 @@ public class Offer {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public List<Category> getCategories() {
+        return categories;
+    }
+
+    public void setCategories(List<Category> categories) {
+        this.categories = categories;
     }
 }

@@ -26,7 +26,11 @@ public class Category {
     //@Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
     //private List<Subcategory> subcategories;
 
-    @OneToMany(fetch = FetchType.EAGER, mappedBy = "category")
+    /*@OneToMany(fetch = FetchType.EAGER, mappedBy = "category") //DIT VERANDEREN!!!
+    @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
+    private List<Offer> offers;*/
+
+    @ManyToMany(mappedBy = "categories")
     @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
     private List<Offer> offers;
 
@@ -86,4 +90,6 @@ public class Category {
     public void setOffers(List<Offer> offers) {
         this.offers = offers;
     }
+
+
 }
