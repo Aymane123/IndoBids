@@ -10,4 +10,5 @@ public class IndobidsApplication {
     public static void main(String[] args) {
         SpringApplication.run(IndobidsApplication.class, args);
     }
+
 }

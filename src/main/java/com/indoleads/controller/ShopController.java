@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.*;
  */
 @RestController
 @RequestMapping("/shop")
+@CrossOrigin(origins = "http://localhost:4200", allowedHeaders = "*")
 public class ShopController {
     private final ShopService shopService;
     private final CatalogService catalogService;
@@ -82,7 +83,7 @@ public class ShopController {
             shopDTO.setName(shop.getName());
             shopDTO.setUrl(shop.getUrl());
             shopDTO.setLocal_delivery_cost(shop.getLocal_delivery_cost());
-            return new ResponseEntity<ShopDTO>(shopDTO, HttpStatus.CREATED);
+            return new ResponseEntity<ShopDTO>(shopDTO, HttpStatus.OK);
         }
         return new ResponseEntity<ShopDTO>(HttpStatus.NOT_ACCEPTABLE);
 

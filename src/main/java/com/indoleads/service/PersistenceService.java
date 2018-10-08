@@ -51,12 +51,12 @@ public class PersistenceService {
 
         catalog = formatter.formatToObject(inputFile);
         shop = createShop();
-        fillShopTable();
+        /*fillShopTable();
         fillCurrencyTable();
         fillCategoryTable();
         fillOfferTable();
         fillPictureTable();
-        fillOfferParameterTable();
+        fillOfferParameterTable();*/
     }
 
 
