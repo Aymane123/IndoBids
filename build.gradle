@@ -1,0 +1,44 @@
+buildscript {
+    ext {
+        springBootVersion = '1.5.10.RELEASE'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+        classpath "mysql:mysql-connector-java:5.1.37"
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+
+group 'com.indobids'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+configurations {
+    jaxb
+}
+
+repositories {
+    mavenCentral()
+}
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile('org.springframework.boot:spring-boot-starter-web')
+    compile('org.springframework.boot:spring-boot-starter-websocket')
+    compile('com.auth0:java-jwt:3.3.0')
+    compile('org.springframework.boot:spring-boot-starter-data-jpa')
+    compile("io.jsonwebtoken:jjwt:0.7.0")
+    // https://mvnrepository.com/artifact/mysql/mysql-connector-java
+    compile(group: 'mysql', name: 'mysql-connector-java', version: '8.0.9-rc')
+
+    runtime('org.springframework.boot:spring-boot-devtools')
+    runtime('mysql:mysql-connector-java')
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+    jaxb ("com.sun.xml.bind:jaxb-xjc:2.1.7")
+}
