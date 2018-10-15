@@ -8,5 +8,5 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 @Repository
-public interface OfferRepository extends JpaRepository<Offer, Integer> {
+public interface OfferRepository extends JpaRepository<Offer, Integer>, OfferRepositoryCustom {
 }

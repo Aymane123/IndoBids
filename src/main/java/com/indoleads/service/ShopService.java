@@ -83,4 +83,14 @@ public class ShopService {
             return null;
         }
     }
+
+    public List<Offer> getSearchedOffers(String input) {
+        List<Offer> searchedOffers = offerRepository.findSearchedOffers(input);
+        if (searchedOffers != null){
+            return searchedOffers;
+        }
+        else{
+            return null;
+        }
+    }
 }

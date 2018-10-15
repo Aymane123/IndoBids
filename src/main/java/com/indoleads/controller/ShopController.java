@@ -108,6 +108,19 @@ public class ShopController {
 
 
     }
+    @GetMapping("/getOffersBySearch/{input}")
+    public ResponseEntity<List<OfferDTO>> getSearchedOffers(@PathVariable String input){
+        List<OfferDTO> offerDTOS = new ArrayList<>();
+        List<Offer> offers = shopService.getSearchedOffers(input);
+        if (offers != null){
+            for (Offer offer : offers) {
+                OfferDTO offerDTO = makeOfferDTO(offer);
+                offerDTOS.add(offerDTO);
+            }
+            return new ResponseEntity<List<OfferDTO>>(offerDTOS, HttpStatus.OK);
+        }
+        return new ResponseEntity<List<OfferDTO>>(HttpStatus.NOT_ACCEPTABLE);
+    }
 
 
     /**
