@@ -26,4 +26,14 @@ public class CategoryRepositoryImpl implements CategoryRepositoryCustom {
 
         return query.getResultList();
     }
+
+    @Override
+    public List<Category> findCategoriesOfOfferByCategoryId(String categoryId) {
+        Query query = entityManager.createNativeQuery("SELECT * FROM category " +
+
+                "WHERE category_id LIKE ?", Category.class);
+
+        query.setParameter(1, categoryId + "%");
+
+        return query.getResultList();    }
 }

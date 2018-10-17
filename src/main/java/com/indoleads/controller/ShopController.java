@@ -36,19 +36,6 @@ public class ShopController {
         this.shopService = shopService;
     }
 
-    @RequestMapping(value = "/getShopOffers", method = RequestMethod.GET)
-    public ResponseEntity<List<OfferDTO>> getShopOffers(@RequestBody int amount) {
-        List<OfferDTO> offerDTOS = new ArrayList<>();
-        List<Offer> offers = shopService.getShopOffers(amount);
-        if (offers.size() != 0) {
-            for (int i = 0; i < amount; i++) {
-                OfferDTO offerDTO = makeOfferDTO(offers.get(i));
-                offerDTOS.add(offerDTO);
-            }
-            return new ResponseEntity<List<OfferDTO>>(offerDTOS, HttpStatus.OK);
-        }
-        return new ResponseEntity<List<OfferDTO>>(HttpStatus.NOT_ACCEPTABLE);
-    }
 
     @RequestMapping(value = "/get20ShopOffers", method = RequestMethod.GET)
     public ResponseEntity<List<OfferDTO>> get20ShopOffers() {
@@ -81,6 +68,32 @@ public class ShopController {
         return new ResponseEntity<List<CategoryDTO>>(HttpStatus.NOT_ACCEPTABLE);
 
     }
+
+    @RequestMapping(value = {"/getOfferById/{id}" }, method = RequestMethod.GET)
+    public ResponseEntity<OfferDTO> getOfferById(@PathVariable String id) {
+        Offer offer = shopService.getOfferById(id);
+        OfferDTO offerDTO;
+        if (offer != null) {
+            offerDTO = makeOfferDTO(offer);
+            return new ResponseEntity<OfferDTO>(offerDTO, HttpStatus.OK);
+        }
+        return new ResponseEntity<OfferDTO> (HttpStatus.NOT_ACCEPTABLE);
+    }
+
+    @RequestMapping(value = "/getShopOffers/{amount}", method = RequestMethod.GET)
+    public ResponseEntity<List<OfferDTO>> getShopOffers(@PathVariable int amount) {
+        List<OfferDTO> offerDTOS = new ArrayList<>();
+        List<Offer> offers = shopService.getRandomOffers(amount);
+        if (offers.size() != 0) {
+            for (int i = 0; i < amount; i++) {
+                OfferDTO offerDTO = makeOfferDTO(offers.get(i));
+                offerDTOS.add(offerDTO);
+            }
+            return new ResponseEntity<List<OfferDTO>>(offerDTOS, HttpStatus.OK);
+        }
+        return new ResponseEntity<List<OfferDTO>>(HttpStatus.NOT_ACCEPTABLE);
+    }
+
     @RequestMapping(value = "/getCategoriesOfOffer/{id}")
     public ResponseEntity<List<CategoryDTO>> getCategoriesOfOffer(@PathVariable String id){
         List<CategoryDTO> categoryDTOS = new ArrayList<>();
@@ -121,6 +134,17 @@ public class ShopController {
         }
         return new ResponseEntity<List<OfferDTO>>(HttpStatus.NOT_ACCEPTABLE);
     }
+    @GetMapping("/getParentAndChildCategoriesOfOffer/{id}")
+    public ResponseEntity<List<CategoryDTO>> getParentAndChildCategoriesOfOffer(@PathVariable String id){
+        List<CategoryDTO> categoryDTOS = new ArrayList<>();
+        List<Category> parentAndChildCategoriesOfOffer = shopService.getParentAndChildCategoriesOfOffer(id);
+        if (parentAndChildCategoriesOfOffer != null){
+            categoryDTOS = makeCategoryDTOs(parentAndChildCategoriesOfOffer);
+            return new ResponseEntity<List<CategoryDTO>>(categoryDTOS, HttpStatus.OK);
+        }
+        return new ResponseEntity<List<CategoryDTO>>(HttpStatus.NOT_ACCEPTABLE);
+    }
+
 
 
     /**

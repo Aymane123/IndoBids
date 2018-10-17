@@ -10,6 +10,8 @@ import com.indoleads.tools.XmlFormatter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -52,6 +54,29 @@ public class ShopService {
         return null;
     }
 
+    public Offer getOfferById(String id) {
+        Offer offer = offerRepository.findById(id);
+        if (offer != null){
+            return offer;
+        }
+        return null;
+    }
+
+    public List<Offer> getRandomOffers(int amount) {
+        ArrayList<Offer> offers = new ArrayList<>();
+        Long qty = offerRepository.count();
+        for (int i = 0; i < amount; i++) {
+            int idx = (int)(Math.random() * qty);
+            Page<Offer> offerPage = offerRepository.findAll(new PageRequest(idx, 1));
+            Offer o = null;
+            if (offerPage.hasContent()) {
+                o = offerPage.getContent().get(0);
+                offers.add(o);
+            }
+        }
+        return offers;
+    }
+
     public List<Offer> get20ShopOffer() {
         List<Offer> offers = offerRepository.findAll();
         List<Offer> offerList = new ArrayList<>();
@@ -92,5 +117,23 @@ public class ShopService {
         else{
             return null;
         }
+    }
+
+    public List<Category> getParentAndChildCategoriesOfOffer(String id) {
+        Offer offer = offerRepository.findById(id);
+        List<Category> parentAndChildCategories = new ArrayList<>();
+
+
+
+        if (offer != null){
+            List<Category> categoriesOfOffer = categoryRepository.findCategoriesOfOfferByCategoryId(offer.getCategoryId());
+            List<Category> parentCategoriesOfOffer = new ArrayList<>();
+            for (Category category : categoriesOfOffer) {
+                parentCategoriesOfOffer = categoryRepository.findCategoriesOfOfferByCategoryId(category.getParent_category());
+            }
+            parentAndChildCategories.addAll(categoriesOfOffer);
+            parentAndChildCategories.addAll(parentCategoriesOfOffer);
+        }
+        return parentAndChildCategories;
     }
 }
