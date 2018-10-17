@@ -136,4 +136,30 @@ public class ShopService {
         }
         return parentAndChildCategories;
     }
+
+    public List<Offer> getOffersByCategoryAndBySearch(String categoryId, String input) {
+        List<Offer> filteredOffers = new ArrayList<>();
+
+        List<Offer> searchedOffers = offerRepository.findSearchedOffers(input);
+        List<Category> categoriesOfSearchedOffer = categoryRepository.findByCategoryId(categoryId);
+        List<Category> childCategories = new ArrayList<>();
+
+        for (Offer searchedOffer : searchedOffers) {
+            for (Category category : categoriesOfSearchedOffer) {
+                if (category.getParent_category().equals("0")){ //if its a parent, get the child category
+                    childCategories = categoryRepository.findChildCategory(category.getCategoryId());
+                }
+                for (Category childCategory : childCategories) {
+                    if (searchedOffer.getCategoryId().equals(category.getCategoryId()) || searchedOffer.getCategoryId().equals(category.getParent_category()) || searchedOffer.getCategoryId().equals(childCategory.getCategoryId())){
+                        filteredOffers.add(searchedOffer);
+                    }
+                }
+
+                childCategories = null;
+            }
+
+        }
+        return filteredOffers;
+
+    }
 }

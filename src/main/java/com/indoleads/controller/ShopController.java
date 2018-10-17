@@ -134,6 +134,8 @@ public class ShopController {
         }
         return new ResponseEntity<List<OfferDTO>>(HttpStatus.NOT_ACCEPTABLE);
     }
+
+
     @GetMapping("/getParentAndChildCategoriesOfOffer/{id}")
     public ResponseEntity<List<CategoryDTO>> getParentAndChildCategoriesOfOffer(@PathVariable String id){
         List<CategoryDTO> categoryDTOS = new ArrayList<>();
@@ -143,6 +145,20 @@ public class ShopController {
             return new ResponseEntity<List<CategoryDTO>>(categoryDTOS, HttpStatus.OK);
         }
         return new ResponseEntity<List<CategoryDTO>>(HttpStatus.NOT_ACCEPTABLE);
+    }
+
+    @GetMapping("/getOffersByCategoryAndBySearch/{categoryId}/{input}")
+    public ResponseEntity<List<OfferDTO>> getSearchedOffers(@PathVariable String categoryId, @PathVariable String input){
+        List<OfferDTO> offerDTOS = new ArrayList<>();
+        List<Offer> offers = shopService.getOffersByCategoryAndBySearch(categoryId, input);
+        if (offers != null){
+            for (Offer offer : offers) {
+                OfferDTO offerDTO = makeOfferDTO(offer);
+                offerDTOS.add(offerDTO);
+            }
+            return new ResponseEntity<List<OfferDTO>>(offerDTOS, HttpStatus.OK);
+        }
+        return new ResponseEntity<List<OfferDTO>>(HttpStatus.NOT_ACCEPTABLE);
     }
 
 

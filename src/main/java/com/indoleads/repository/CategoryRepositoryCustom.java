@@ -8,4 +8,5 @@ public interface CategoryRepositoryCustom {
     List<Category> findMainCategories(String parent_category);
 
     List<Category> findCategoriesOfOfferByCategoryId(String categoryId);
+    List<Category> findChildCategory(String categoryId);
 }
