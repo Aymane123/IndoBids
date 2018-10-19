@@ -1,10 +1,10 @@
 package com.indoleads.domain.DTOs;
 
-import javax.persistence.Column;
+import java.text.CollationElementIterator;
 import java.util.Collection;
-import java.util.List;
 
-public class OfferDTO {
+public class OfferWithCategoriesDTO {
+
     private int offerId;
     private String id;
     private String url;
@@ -21,9 +21,10 @@ public class OfferDTO {
     private boolean manufacturer_warranty;
     private String available;
     private Collection<String> picturesUrls;
+    private Collection<CategoryDTO> categories;
     private double discount;
 
-    public OfferDTO(int offerId, String id, String url, double price, double oldprice, String currencyId, String categoryId, boolean delivery, String name, String vendor, String vendorCode, String model, String description, boolean manufacturer_warranty, String available, Collection<String> picturesUrls, double discount) {
+    public OfferWithCategoriesDTO(int offerId, String id, String url, double price, double oldprice, String currencyId, String categoryId, boolean delivery, String name, String vendor, String vendorCode, String model, String description, boolean manufacturer_warranty, String available, Collection<String> picturesUrls, double discount, Collection<CategoryDTO> categories) {
         this.offerId = offerId;
         this.id = id;
         this.url = url;
@@ -41,10 +42,10 @@ public class OfferDTO {
         this.available = available;
         this.picturesUrls = picturesUrls;
         this.discount = discount;
+        this.categories = categories;
     }
 
-
-    public OfferDTO() {
+    public OfferWithCategoriesDTO() {
     }
 
     public int getOfferId() {
@@ -181,5 +182,13 @@ public class OfferDTO {
 
     public void setDiscount(double discount) {
         this.discount = discount;
+    }
+
+    public Collection<CategoryDTO> getCategories() {
+        return categories;
+    }
+
+    public void setCategories(Collection<CategoryDTO> categories) {
+        this.categories = categories;
     }
 }

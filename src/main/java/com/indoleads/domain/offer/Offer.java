@@ -188,8 +188,6 @@ public class Offer {
         this.offerParameters = offerParameters;
     }
 
-
-
     public void setCurrencyId(String currencyId) {
         this.currencyId = currencyId;
     }

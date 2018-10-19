@@ -8,6 +8,6 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 @Repository
-public interface OfferRepository extends JpaRepository<Offer, Integer> {
-    //List<Offer> findFirst20();
+public interface OfferRepository extends JpaRepository<Offer, Integer>, OfferRepositoryCustom {
+    Offer findById(String id);
 }

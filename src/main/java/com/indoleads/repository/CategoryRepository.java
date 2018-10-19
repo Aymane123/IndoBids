@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface CategoryRepository extends JpaRepository<Category, Integer> {
+public interface CategoryRepository extends JpaRepository<Category, Integer>, CategoryRepositoryCustom {
     //Category findByCategoryId(String categoryId); //TE VERANDEREN!!!
     List<Category> findByCategoryId(String categoryId);
 }
