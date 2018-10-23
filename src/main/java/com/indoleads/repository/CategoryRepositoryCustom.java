@@ -10,5 +10,5 @@ public interface CategoryRepositoryCustom {
     List<Category> findParentCategoryForOffer(String offerId);
     List<Category> findChildCategory(String categoryId);
     List<Category> findCategoriesOfOfferByCategoryId(String categoryId);
-
+    List<Category> findAllCategoriesUsedByOffers();
 }

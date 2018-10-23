@@ -1,6 +1,5 @@
 package com.indoleads.service;
 
-import com.indoleads.domain.DTOs.OfferDTO;
 import com.indoleads.domain.category.Category;
 import com.indoleads.domain.offer.Offer;
 import com.indoleads.domain.shop.Shop;
@@ -11,14 +10,14 @@ import com.indoleads.tools.XmlFormatter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.ExecutionException;
 
+/**
+ * Class is responsible for all transactions that include {@Offer}
+ */
 @Service
 public class ShopService {
     private ShopRepository shopRepository;
@@ -36,7 +35,7 @@ public class ShopService {
     }
 
     /**
-     * Method gets the shop
+     * Method gets the shop with details
      */
     public Shop getShop() {
         Shop shop = shopRepository.findFirstByOrderByIdAsc();
@@ -47,7 +46,7 @@ public class ShopService {
     }
 
     /**
-     * Gets amount of orders for the shop
+     * Gets a random amount of offers
      */
     public List<Offer> getRandomOffers(int amount) {
         List<Offer> discountedOffers = offerRepository.findDiscountedOffers(amount);
@@ -58,7 +57,7 @@ public class ShopService {
     }
 
     /**
-     * Method gets the Offers by ID
+     * Method gets the offer by the ID
      */
     public Offer getOfferById(String id) {
         Offer offer = offerRepository.findById(id);
@@ -81,7 +80,20 @@ public class ShopService {
     }
 
     /**
-     * Method gets Categories for an Offer
+     * Method gets all the categories that are used by offers
+     */
+    public List<Category> getMainCategoriesUsedByOffers() {
+        List<Category> mainCategories = categoryRepository.findMainCategories("0");
+
+        if (mainCategories != null) {
+            return mainCategories;
+        } else {
+            return null;
+        }
+    }
+
+    /**
+     * Method gets all the categories of an offer
      */
     public List<Category> getCategoriesOfOffer(String id) {
         List<Category> categoriesOfOffer = categoryRepository.findCategoriesOfOffer(id);
@@ -100,7 +112,7 @@ public class ShopService {
     public List<Category> getParentAndChildCategoriesOfOffer(String id) {
         Offer offer = offerRepository.findById(id);
         List<Category> parentAndChildCategories = new ArrayList<>();
-        if (offer != null){
+        if (offer != null) {
             List<Category> categoriesOfOffer = categoryRepository.findCategoriesOfOfferByCategoryId(offer.getCategoryId());
             List<Category> parentCategoriesOfOffer = new ArrayList<>();
             for (Category category : categoriesOfOffer) {
@@ -113,7 +125,7 @@ public class ShopService {
     }
 
     /**
-     * Method gets offers filtered on name
+     * Method gets offers filtered by name
      */
     public List<Offer> getSearchedOffers(String input) {
         List<Offer> searchedOffers = offerRepository.findSearchedOffers(input);
@@ -125,11 +137,11 @@ public class ShopService {
     }
 
     /**
-     * Method gets the offers filtered by category ID
+     * Method gets al amount of offers filtered by category ID
      */
-    public List<Offer> getOffersByCategoryId(String id, int amount) {
+    public List<Offer> getOffersByCategoryId(String id) {
         List<Offer> filteredOffers = new ArrayList<>();
-        List<Offer> offers = offerRepository.findAll();
+        List<Offer> offers = offerRepository.findOffersByCategoryId(id);
         List<Category> categoriesOfSearchedOffer = categoryRepository.findByCategoryId(id);
         List<Category> childCategories = new ArrayList<>();
         for (Offer offer : offers) {
@@ -150,15 +162,12 @@ public class ShopService {
                 }
                 childCategories = null;
             }
-            if (filteredOffers.size() == amount) {
-                return filteredOffers;
-            }
         }
         return filteredOffers;
     }
 
     /**
-     * Method gets the offers by category & search text
+     * Method gets the offers filtered by search & category ID
      */
     public List<Offer> getOffersByCategoryAndBySearch(String categoryId, String input) {
         List<Offer> filteredOffers = new ArrayList<>();
@@ -180,4 +189,5 @@ public class ShopService {
         }
         return filteredOffers;
     }
+
 }

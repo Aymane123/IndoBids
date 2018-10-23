@@ -3,14 +3,11 @@ package com.indoleads.controller;
 
 import com.indoleads.domain.DTOs.CategoryDTO;
 import com.indoleads.domain.DTOs.OfferDTO;
-import com.indoleads.domain.DTOs.OfferWithCategoriesDTO;
 import com.indoleads.domain.DTOs.ShopDTO;
-import com.indoleads.domain.catalogus.Catalog;
 import com.indoleads.domain.category.Category;
 import com.indoleads.domain.offer.Offer;
 import com.indoleads.domain.offer.Picture;
 import com.indoleads.domain.shop.Shop;
-import com.indoleads.service.CatalogService;
 import com.indoleads.service.ShopService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,6 +16,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -49,29 +47,20 @@ public class ShopController {
     }
 
     @RequestMapping(value = "/getShopOffers/{amount}", method = RequestMethod.GET)
-    public ResponseEntity<List<OfferWithCategoriesDTO>> getShopOffers(@PathVariable int amount) {
-        List<OfferWithCategoriesDTO> offerWithCategoriesDTOS = new ArrayList<>();
-
+    public ResponseEntity<List<OfferDTO>> getShopOffers(@PathVariable int amount) {
+        List<OfferDTO> offerDTOS = new ArrayList<>();
         List<Offer> offers = shopService.getRandomOffers(amount);
-
         for (Offer offer : offers) {
             List<Category> categories = shopService.getParentAndChildCategoriesOfOffer(offer.getId());
-            List<CategoryDTO> categoryDTOList = new ArrayList<>();
-            for (Category category : categories) {
-                CategoryDTO categoryDTO = new CategoryDTO();
-                categoryDTO.setCategoryId(category.getCategoryId());
-                categoryDTO.setId(category.getId());
-                categoryDTO.setValue(category.getValue());
-                categoryDTOList.add(categoryDTO);
-            }
-            OfferWithCategoriesDTO dto = makeOfferDTOWithCategories(offer, categoryDTOList);
-            offerWithCategoriesDTOS.add(dto);
+            List<CategoryDTO> categoryDTOList = makeCategoryDTOs(categories);
+            OfferDTO dto = makeOfferDTO(offer, categoryDTOList);
+            offerDTOS.add(dto);
         }
 
         if (offers.size() != 0) {
-            return new ResponseEntity<List<OfferWithCategoriesDTO>>(offerWithCategoriesDTOS, HttpStatus.OK);
+            return new ResponseEntity<List<OfferDTO>>(offerDTOS, HttpStatus.OK);
         }
-        return new ResponseEntity<List<OfferWithCategoriesDTO>>(HttpStatus.NOT_ACCEPTABLE);
+        return new ResponseEntity<List<OfferDTO>>(HttpStatus.NOT_ACCEPTABLE);
     }
 
     @RequestMapping(value = {"/getOfferById/{id}"}, method = RequestMethod.GET)
@@ -79,7 +68,10 @@ public class ShopController {
         Offer offer = shopService.getOfferById(id);
         OfferDTO offerDTO;
         if (offer != null) {
-            offerDTO = makeOfferDTO(offer);
+            List<Category> categories = shopService.getParentAndChildCategoriesOfOffer(offer.getId());
+            List<CategoryDTO> categoryDTOList = makeCategoryDTOs(categories);
+
+            offerDTO = makeOfferDTO(offer, categoryDTOList);
             return new ResponseEntity<OfferDTO>(offerDTO, HttpStatus.OK);
         }
         return new ResponseEntity<OfferDTO>(HttpStatus.NOT_ACCEPTABLE);
@@ -96,7 +88,7 @@ public class ShopController {
         return new ResponseEntity<List<CategoryDTO>>(HttpStatus.NOT_ACCEPTABLE);
     }
 
-    @RequestMapping(value = "/getAllCategoriesOfOffer/{id}")
+/*    @RequestMapping(value = "/getAllCategoriesOfOffer/{id}")
     public ResponseEntity<List<CategoryDTO>> getAllCategoriesOfOffer(@PathVariable String id) {
         List<CategoryDTO> categoryDTOS = new ArrayList<>();
         List<Category> categories = shopService.getCategoriesOfOffer(id);
@@ -105,7 +97,7 @@ public class ShopController {
             return new ResponseEntity<List<CategoryDTO>>(categoryDTOS, HttpStatus.OK);
         }
         return new ResponseEntity<List<CategoryDTO>>(HttpStatus.NOT_ACCEPTABLE);
-    }
+    }*/
 
     @GetMapping("/getOffersBySearch/{input}")
     public ResponseEntity<List<OfferDTO>> getSearchedOffers(@PathVariable String input) {
@@ -113,7 +105,10 @@ public class ShopController {
         List<Offer> offers = shopService.getSearchedOffers(input);
         if (offers != null) {
             for (Offer offer : offers) {
-                OfferDTO offerDTO = makeOfferDTO(offer);
+                List<Category> categories = shopService.getParentAndChildCategoriesOfOffer(offer.getId());
+                List<CategoryDTO> categoryDTOList = makeCategoryDTOs(categories);
+
+                OfferDTO offerDTO = makeOfferDTO(offer, categoryDTOList);
                 offerDTOS.add(offerDTO);
             }
             return new ResponseEntity<List<OfferDTO>>(offerDTOS, HttpStatus.OK);
@@ -121,13 +116,15 @@ public class ShopController {
         return new ResponseEntity<List<OfferDTO>>(HttpStatus.NOT_ACCEPTABLE);
     }
 
-    @GetMapping("/getOffersByCategoryId/{id}/{amount}")
-    public ResponseEntity<List<OfferDTO>> getOffersByCategoryId(@PathVariable String id, @PathVariable int amount) {
+    @GetMapping("/getOffersByCategoryId/{id}")
+    public ResponseEntity<List<OfferDTO>> getOffersByCategoryId(@PathVariable String id) {
         List<OfferDTO> offerDTOS = new ArrayList<>();
-        List<Offer> offers = shopService.getOffersByCategoryId(id, amount);
+        List<Offer> offers = shopService.getOffersByCategoryId(id);
         if (offers != null) {
             for (Offer offer : offers) {
-                OfferDTO offerDTO = makeOfferDTO(offer);
+                List<Category> categories = shopService.getParentAndChildCategoriesOfOffer(offer.getId());
+                List<CategoryDTO> categoryDTOList = makeCategoryDTOs(categories);
+                OfferDTO offerDTO = makeOfferDTO(offer, categoryDTOList);
                 offerDTOS.add(offerDTO);
             }
             return new ResponseEntity<List<OfferDTO>>(offerDTOS, HttpStatus.OK);
@@ -166,7 +163,7 @@ public class ShopController {
     /**
      * Method converts an Offer to an OfferDTO
      */
-    private OfferDTO makeOfferDTO(Offer offer) {
+/*    private OfferDTO makeOfferDTO(Offer offer) {
         try {
             List<String> pictureUrls = new ArrayList<>();
             for (Picture picture : offer.getPictures()) {
@@ -180,9 +177,8 @@ public class ShopController {
             logger.error("Could not convert to OfferDTO");
         }
         return null;
-    }
-
-    private OfferWithCategoriesDTO makeOfferDTOWithCategories(Offer offer, List<CategoryDTO> categoryDTOS) {
+    }*/
+    private OfferDTO makeOfferDTO(Offer offer, List<CategoryDTO> categoryDTOS) {
         try {
             List<String> pictureUrls = new ArrayList<>();
             for (Picture picture : offer.getPictures()) {
@@ -190,16 +186,16 @@ public class ShopController {
                 pictureUrls.add(url);
             }
             double priceDiscount = (1 - (offer.getPrice() / offer.getOldprice())) * 100;
-            double roundOff = Math.round(priceDiscount) / 100.0;
-            return new OfferWithCategoriesDTO(offer.getOfferId(), offer.getId(), offer.getUrl(), offer.getPrice(), offer.getOldprice(), offer.getCurrencyId(), offer.getCategoryId(), offer.isDelivery(), offer.getName(), offer.getVendor(), offer.getVendorCode(), offer.getModel(), offer.getDescription(), offer.isManufacturer_warranty(), offer.getAvailable(), pictureUrls, roundOff, categoryDTOS);
+            DecimalFormat f = new DecimalFormat("##,00");
+            double roundFormatted = Double.parseDouble(f.format(priceDiscount));
+            return new OfferDTO(offer.getOfferId(), offer.getId(), offer.getUrl(), offer.getPrice(), offer.getOldprice(), offer.getCurrencyId(), offer.getCategoryId(), offer.isDelivery(), offer.getName(), offer.getVendor(), offer.getVendorCode(), offer.getModel(), offer.getDescription(), offer.isManufacturer_warranty(), offer.getAvailable(), pictureUrls, roundFormatted, categoryDTOS);
         } catch (Exception ex) {
             logger.error("Could not convert to OfferDTO");
         }
         return null;
     }
 
-
-    private OfferWithCategoriesDTO makeOfferDTOWithCategories(Offer offer) {
+    private OfferDTO makeOfferDTOWithCategories(Offer offer) {
         try {
             List<String> pictureUrls = new ArrayList<>();
             for (Picture picture : offer.getPictures()) {
@@ -209,7 +205,7 @@ public class ShopController {
             double priceDiscount = (1 - (offer.getPrice() / offer.getOldprice())) * 100;
             double roundOff = Math.round(priceDiscount) / 100.0;
             List<CategoryDTO> categoryDTOS = makeCategoryDTOs(offer.getCategories());
-            return new OfferWithCategoriesDTO(offer.getOfferId(), offer.getId(), offer.getUrl(), offer.getPrice(), offer.getOldprice(), offer.getCurrencyId(), offer.getCategoryId(), offer.isDelivery(), offer.getName(), offer.getVendor(), offer.getVendorCode(), offer.getModel(), offer.getDescription(), offer.isManufacturer_warranty(), offer.getAvailable(), pictureUrls, roundOff, categoryDTOS);
+            return new OfferDTO(offer.getOfferId(), offer.getId(), offer.getUrl(), offer.getPrice(), offer.getOldprice(), offer.getCurrencyId(), offer.getCategoryId(), offer.isDelivery(), offer.getName(), offer.getVendor(), offer.getVendorCode(), offer.getModel(), offer.getDescription(), offer.isManufacturer_warranty(), offer.getAvailable(), pictureUrls, roundOff, categoryDTOS);
         } catch (Exception ex) {
             logger.error("Could not convert to OfferDTO");
         }

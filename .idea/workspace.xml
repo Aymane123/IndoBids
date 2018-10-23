@@ -2,24 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="262f9eb4-d677-44f0-a2df-28ebceed9997" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/domain/DTOs/CategoryDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/domain/DTOs/OfferWithCategoriesDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/repository/CategoryRepositoryCustom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/repository/CategoryRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/repository/OfferRepositoryCustom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/repository/OfferRepositoryImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/indoleads/controller/ShopController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/indoleads/controller/ShopController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/indoleads/controller/ShopController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/com/indoleads/domain/DTOs/OfferDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/indoleads/domain/DTOs/OfferDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/indoleads/domain/offer/Offer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/indoleads/domain/offer/Offer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/indoleads/repository/CategoryRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/indoleads/repository/CategoryRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/indoleads/repository/OfferRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/indoleads/repository/OfferRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/indoleads/domain/DTOs/OfferWithCategoriesDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/indoleads/repository/OfferRepositoryCustom.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/indoleads/repository/OfferRepositoryCustom.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/indoleads/repository/OfferRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/indoleads/repository/OfferRepositoryImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/com/indoleads/service/ShopService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/indoleads/service/ShopService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/indoleads/controller/ShopController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/controller/ShopController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/indoleads/domain/DTOs/OfferDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/domain/DTOs/OfferDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/indoleads/domain/offer/Offer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/domain/offer/Offer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/indoleads/repository/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/repository/CategoryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/indoleads/repository/OfferRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/repository/OfferRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/indoleads/domain/DTOs/OfferWithCategoriesDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/indoleads/repository/CategoryRepositoryCustom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/repository/CategoryRepositoryCustom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/indoleads/repository/CategoryRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/repository/CategoryRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/indoleads/repository/OfferRepositoryCustom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/repository/OfferRepositoryCustom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/indoleads/repository/OfferRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/repository/OfferRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/indoleads/service/CatalogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/service/CatalogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/indoleads/service/PersistenceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/service/PersistenceService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/indoleads/service/ShopService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/indoleads/service/ShopService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -107,49 +105,53 @@
     <session id="2004890014">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
+          <entry key="project.closed" value="15" />
           <entry key="project.open.time.1" value="3" />
+          <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.32" value="1" />
+          <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.35" value="1" />
-          <entry key="project.open.time.36" value="1" />
+          <entry key="project.open.time.36" value="2" />
+          <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.46" value="1" />
           <entry key="project.open.time.5" value="2" />
-          <entry key="project.opened" value="15" />
+          <entry key="project.opened" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="4" />
+          <entry key="dummy" value="12" />
           <entry key="gradle" value="36" />
-          <entry key="java" value="5522" />
+          <entry key="java" value="6162" />
           <entry key="properties" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="36" />
-          <entry key="JAVA" value="5522" />
-          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="JAVA" value="6161" />
+          <entry key="PLAIN_TEXT" value="12" />
           <entry key="Properties" value="10" />
+          <entry key="SQL" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gradle" value="1" />
           <entry key="gradlew" value="1" />
-          <entry key="java" value="57" />
+          <entry key="java" value="66" />
           <entry key="properties" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Groovy" value="1" />
-          <entry key="JAVA" value="57" />
+          <entry key="JAVA" value="66" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="1" />
         </counts>
@@ -161,8 +163,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/repository/OfferRepositoryCustom.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="153">
+              <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -170,12 +172,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/service/ShopService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4">
-              <caret line="97" column="57" selection-start-line="97" selection-start-column="57" selection-end-line="97" selection-end-column="57" />
+            <state relative-caret-position="18">
+              <caret line="50" column="23" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
               <folding>
+                <element signature="method#ShopService#0;class#ShopService#0" />
                 <element signature="method#getShop#0;class#ShopService#0" />
                 <element signature="method#getOfferById#0;class#ShopService#0" />
                 <element signature="method#getMainCategories#0;class#ShopService#0" />
+                <element signature="method#getMainCategoriesUsedByOffers#0;class#ShopService#0" />
+                <element signature="method#getCategoriesOfOffer#0;class#ShopService#0" />
+                <element signature="method#getParentAndChildCategoriesOfOffer#0;class#ShopService#0" />
                 <element signature="method#getSearchedOffers#0;class#ShopService#0" />
                 <element signature="method#getOffersByCategoryId#0;class#ShopService#0" />
                 <element signature="method#getOffersByCategoryAndBySearch#0;class#ShopService#0" />
@@ -185,32 +191,45 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/repository/CategoryRepositoryImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/service/PersistenceService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="68" selection-start-line="68" selection-end-line="68" />
+            <state relative-caret-position="97">
+              <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+              <folding>
+                <element signature="method#PersistenceService#0;class#PersistenceService#0" />
+                <element signature="method#fillCurrencyTable#0;class#PersistenceService#0" />
+                <element signature="method#fillCategoryTable#0;class#PersistenceService#0" />
+                <element signature="method#fillOfferTable#0;class#PersistenceService#0" />
+                <element signature="method#fillPictureTable#0;class#PersistenceService#0" />
+                <element signature="method#fillOfferParameterTable#0;class#PersistenceService#0" />
+                <element signature="method#createShop#0;class#PersistenceService#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/controller/ShopController.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/service/CatalogService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="70" column="33" selection-start-line="70" selection-start-column="33" selection-end-line="70" selection-end-column="33" />
+            <state relative-caret-position="136">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
               <folding>
-                <element signature="method#getShop#0;class#ShopController#0" />
-                <element signature="method#getOfferById#0;class#ShopController#0" />
-                <element signature="method#getCategories#0;class#ShopController#0" />
-                <element signature="method#getAllCategoriesOfOffer#0;class#ShopController#0" />
-                <element signature="method#getSearchedOffers#0;class#ShopController#0" />
-                <element signature="method#getOffersByCategoryId#0;class#ShopController#0" />
-                <element signature="method#getParentAndChildCategoriesOfOffer#0;class#ShopController#0" />
-                <element signature="docComment;method#makeShopDTO#0;class#ShopController#0" />
-                <element signature="method#makeShopDTO#0;class#ShopController#0" />
-                <element signature="docComment;method#makeOfferDTO#0;class#ShopController#0" />
-                <element signature="method#makeOfferDTO#0;class#ShopController#0" />
+                <element signature="method#start#0;class#CatalogService#0" />
+                <element signature="method#printShop#0;class#CatalogService#0" />
+                <element signature="method#initialize#0;class#CatalogService#0" />
+                <element signature="method#getShopById#0;class#CatalogService#0" />
+                <element signature="method#shutdown#0;class#CatalogService#0" />
+                <element signature="method#getCatalogById#0;class#CatalogService#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/service/InputService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -218,17 +237,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/domain/DTOs/OfferDTO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="183" column="5" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="183" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/domain/DTOs/OfferWithCategoriesDTO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="26" column="347" selection-start-line="26" selection-start-column="337" selection-end-line="26" selection-end-column="347" />
+            <state relative-caret-position="-8">
+              <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -237,10 +247,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/repository/CategoryRepositoryCustom.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/config/ApplicationConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="85">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -248,29 +258,37 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/repository/OfferRepositoryImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="62" column="37" selection-start-line="62" selection-start-column="37" selection-end-line="62" selection-end-column="37" />
+            <state relative-caret-position="206">
+              <caret line="42" column="40" lean-forward="true" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/domain/offer/Offer.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/controller/PersistenceController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1615">
-              <caret line="129" selection-start-line="129" selection-end-line="129" />
+            <state relative-caret-position="34">
+              <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/controller/ShopController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="61">
+              <caret line="188" column="57" lean-forward="true" selection-start-line="188" selection-start-column="57" selection-end-line="188" selection-end-column="57" />
               <folding>
-                <element signature="e#3074#3075#0" expanded="true" />
+                <element signature="method#getShop#0;class#ShopController#0" />
+                <element signature="method#getOfferById#0;class#ShopController#0" />
+                <element signature="method#getCategories#0;class#ShopController#0" />
+                <element signature="method#getSearchedOffers#0;class#ShopController#0" />
+                <element signature="method#getOffersByCategoryId#0;class#ShopController#0" />
+                <element signature="method#getParentAndChildCategoriesOfOffer#0;class#ShopController#0" />
+                <element signature="method#makeShopDTO#0;class#ShopController#0" />
+                <element signature="method#makeOfferDTOWithCategories#0;class#ShopController#0" />
+                <element signature="method#makeCategoryDTOs#0;class#ShopController#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/repository/OfferRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -698,21 +716,21 @@
         <option value="$PROJECT_DIR$/src/main/java/com/indoleads/security/WebSecurity.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/indoleads/service/CatalogService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/indoleads/exception/ApiException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/indoleads/service/PersistenceService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/indoleads/domain/DTOs/ShopDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/indoleads/repository/repository/CategoryRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/indoleads/repository/CategoryRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/indoleads/domain/offer/Offer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/indoleads/domain/DTOs/OfferDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/indoleads/repository/OfferRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/indoleads/domain/DTOs/OfferWithCategoriesDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/indoleads/domain/DTOs/OfferDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/indoleads/repository/OfferRepositoryCustom.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/indoleads/repository/OfferRepositoryImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/indoleads/service/ShopService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/indoleads/repository/CategoryRepositoryCustom.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/indoleads/repository/CategoryRepositoryImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/indoleads/domain/DTOs/OfferWithCategoriesDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/indoleads/service/ShopService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/indoleads/service/PersistenceService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/indoleads/service/CatalogService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/indoleads/repository/OfferRepositoryImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/indoleads/controller/ShopController.java" />
       </list>
     </option>
@@ -734,8 +752,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -833,6 +851,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="indoleads" type="462c0819:PsiDirectoryNode" />
+              <item name="exception" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="com.indobids" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IndoBids-XmlPersistentie" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="indoleads" type="462c0819:PsiDirectoryNode" />
               <item name="repository" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -869,7 +896,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539925377901" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539946610893" />
     <property name="last_opened_file_path" value="$USER_HOME$/integratieproject2-team12" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15625" />
@@ -976,12 +1003,16 @@
       <workItem from="1539662655609" duration="4561000" />
       <workItem from="1539742987670" duration="2118000" />
       <workItem from="1539829200544" duration="13481000" />
-      <workItem from="1539915824632" duration="9459000" />
+      <workItem from="1539915824632" duration="14123000" />
+      <workItem from="1540175045462" duration="2484000" />
+      <workItem from="1540196720744" duration="741000" />
+      <workItem from="1540197754126" duration="2803000" />
+      <workItem from="1540262351839" duration="7248000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="189207000" />
+    <option name="totallyTimeSpent" value="207147000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -996,7 +1027,7 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14008097" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.33279353" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1006,8 +1037,8 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.24689165" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.43872115" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.1722913" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.49023092" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3285968" />
@@ -1039,6 +1070,16 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/indoleads/controller/ShopController.java</url>
+          <line>189</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="catalog.shop.categories.categories.get(0).shop" />
@@ -1136,13 +1177,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/config/ApplicationConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/IndoBidsTester.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -1178,13 +1212,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/service/InputService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -1206,13 +1233,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/service/CatalogService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="17" column="53" lean-forward="true" selection-start-line="17" selection-start-column="53" selection-end-line="18" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/repository/repository/OfferParameterRepository.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/repository/repository/ShopRepository.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/repository/repository/OfferRepository.java" />
@@ -1223,6 +1243,13 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/domain/DTOs/CategoryDTO.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-core/5.0.12.Final/bf593c18eacdead181ff26b4997d7ba8fcab93bd/hibernate-core-5.0.12.Final-sources.jar!/org/hibernate/collection/internal/PersistentBag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4046">
+          <caret line="276" selection-start-line="276" selection-end-line="276" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/repository/CategoryRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1230,24 +1257,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/service/PersistenceService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/repository/CategoryRepositoryCustom.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="122" column="58" selection-start-line="122" selection-start-column="58" selection-end-line="122" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/controller/PersistenceController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-core/5.0.12.Final/bf593c18eacdead181ff26b4997d7ba8fcab93bd/hibernate-core-5.0.12.Final-sources.jar!/org/hibernate/collection/internal/PersistentBag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4046">
-          <caret line="276" selection-start-line="276" selection-end-line="276" />
+        <state relative-caret-position="170">
+          <caret line="12" column="51" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -1268,52 +1281,91 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/repository/CategoryRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/config/ApplicationConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/controller/PersistenceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/service/CatalogService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="method#start#0;class#CatalogService#0" />
+            <element signature="method#printShop#0;class#CatalogService#0" />
+            <element signature="method#initialize#0;class#CatalogService#0" />
+            <element signature="method#getShopById#0;class#CatalogService#0" />
+            <element signature="method#shutdown#0;class#CatalogService#0" />
+            <element signature="method#getCatalogById#0;class#CatalogService#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/service/InputService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/service/PersistenceService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+          <folding>
+            <element signature="method#PersistenceService#0;class#PersistenceService#0" />
+            <element signature="method#fillCurrencyTable#0;class#PersistenceService#0" />
+            <element signature="method#fillCategoryTable#0;class#PersistenceService#0" />
+            <element signature="method#fillOfferTable#0;class#PersistenceService#0" />
+            <element signature="method#fillPictureTable#0;class#PersistenceService#0" />
+            <element signature="method#fillOfferParameterTable#0;class#PersistenceService#0" />
+            <element signature="method#createShop#0;class#PersistenceService#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/repository/OfferRepositoryCustom.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="153">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/repository/OfferRepositoryImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="62" column="37" selection-start-line="62" selection-start-column="37" selection-end-line="62" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/repository/CategoryRepositoryCustom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/domain/DTOs/OfferDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="183" column="5" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="183" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/domain/DTOs/OfferWithCategoriesDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="26" column="347" selection-start-line="26" selection-start-column="337" selection-end-line="26" selection-end-column="347" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="206">
+          <caret line="42" column="40" lean-forward="true" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/service/ShopService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4">
-          <caret line="97" column="57" selection-start-line="97" selection-start-column="57" selection-end-line="97" selection-end-column="57" />
+        <state relative-caret-position="18">
+          <caret line="50" column="23" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
           <folding>
+            <element signature="method#ShopService#0;class#ShopService#0" />
             <element signature="method#getShop#0;class#ShopService#0" />
             <element signature="method#getOfferById#0;class#ShopService#0" />
             <element signature="method#getMainCategories#0;class#ShopService#0" />
+            <element signature="method#getMainCategoriesUsedByOffers#0;class#ShopService#0" />
+            <element signature="method#getCategoriesOfOffer#0;class#ShopService#0" />
+            <element signature="method#getParentAndChildCategoriesOfOffer#0;class#ShopService#0" />
             <element signature="method#getSearchedOffers#0;class#ShopService#0" />
             <element signature="method#getOffersByCategoryId#0;class#ShopService#0" />
             <element signature="method#getOffersByCategoryAndBySearch#0;class#ShopService#0" />
@@ -1321,29 +1373,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/repository/CategoryRepositoryImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/domain/DTOs/OfferDTO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="68" selection-start-line="68" selection-end-line="68" />
+        <state relative-caret-position="-8">
+          <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/indoleads/controller/ShopController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="70" column="33" selection-start-line="70" selection-start-column="33" selection-end-line="70" selection-end-column="33" />
+        <state relative-caret-position="61">
+          <caret line="188" column="57" lean-forward="true" selection-start-line="188" selection-start-column="57" selection-end-line="188" selection-end-column="57" />
           <folding>
             <element signature="method#getShop#0;class#ShopController#0" />
             <element signature="method#getOfferById#0;class#ShopController#0" />
             <element signature="method#getCategories#0;class#ShopController#0" />
-            <element signature="method#getAllCategoriesOfOffer#0;class#ShopController#0" />
             <element signature="method#getSearchedOffers#0;class#ShopController#0" />
             <element signature="method#getOffersByCategoryId#0;class#ShopController#0" />
             <element signature="method#getParentAndChildCategoriesOfOffer#0;class#ShopController#0" />
-            <element signature="docComment;method#makeShopDTO#0;class#ShopController#0" />
             <element signature="method#makeShopDTO#0;class#ShopController#0" />
-            <element signature="docComment;method#makeOfferDTO#0;class#ShopController#0" />
-            <element signature="method#makeOfferDTO#0;class#ShopController#0" />
+            <element signature="method#makeOfferDTOWithCategories#0;class#ShopController#0" />
+            <element signature="method#makeCategoryDTOs#0;class#ShopController#0" />
           </folding>
         </state>
       </provider>

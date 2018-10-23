@@ -19,7 +19,6 @@ public class CatalogService implements InputService {
     private Logger logger = LoggerFactory.getLogger(CatalogService.class);
     private Formatter formatter;
 
-
     public void start(String inputFile) throws FileInputException {
         logger.info("CatalogService started...");
         Catalog catalog = convertToShop(inputFile);
@@ -33,7 +32,6 @@ public class CatalogService implements InputService {
     public void printShop(Catalog catalog) {
         System.out.println(catalog.getShop().getId() + " " + catalog.getShop().getName());
     }
-
 
     public void initialize(Formatter formatter) throws FileInputException {
         try {
@@ -54,9 +52,6 @@ public class CatalogService implements InputService {
         return null;
     }
 
-    /**
-     * Test method to test frontend without DB connection
-     */
     @Override
     public Shop getShopFromFile(String inputFile) {
         return convertToShop(inputFile).getShop();

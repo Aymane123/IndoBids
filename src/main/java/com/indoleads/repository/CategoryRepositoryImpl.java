@@ -68,4 +68,16 @@ public class CategoryRepositoryImpl implements CategoryRepositoryCustom {
 
         return query.getResultList();
     }
+
+    @Override
+    public List<Category> findAllCategoriesUsedByOffers() {
+        Query query = entityManager.createNativeQuery("SELECT * FROM category " +
+
+                "WHERE category_id LIKE ?", Category.class);
+
+
+        return query.getResultList();
+
+    }
+
 }

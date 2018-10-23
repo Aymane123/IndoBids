@@ -12,6 +12,4 @@ public interface OfferRepositoryCustom {
 
     List<Offer> findDiscountedOffers(int amount);
 
-    List<Offer> findOffersByPrice(int amount);
-
 }

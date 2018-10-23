@@ -20,22 +20,16 @@ public class OfferRepositoryImpl implements OfferRepositoryCustom {
     @Override
     public List<Offer> findSearchedOffers(String input) {
         Query query = entityManager.createNativeQuery("SELECT * FROM offer " +
-
                 "WHERE name LIKE ?", Offer.class);
-
         query.setParameter(1, "%" + input + "%");
-
         return query.getResultList();
     }
 
     @Override
     public List<Offer> findOffersByCategoryId(String input) {
         Query query = entityManager.createNativeQuery("SELECT * FROM offer " +
-
-                "WHERE name LIKE ?", Offer.class);
-
+                "WHERE category_id LIKE ?", Offer.class);
         query.setParameter(1, "%" + input + "%");
-
         return query.getResultList();
     }
 
@@ -44,22 +38,10 @@ public class OfferRepositoryImpl implements OfferRepositoryCustom {
         Query query = entityManager.createNativeQuery("SELECT *, ROUND((1 - (price / oldprice))*100,2) discountpercentage " +
                 "FROM offer " +
                 "WHERE offer_id IN (SELECT offer_id FROM picture GROUP BY offer_id HAVING count(*)>3) AND price < oldprice " +
+                "GROUP BY description " +
                 "ORDER BY discountpercentage DESC " +
                 "LIMIT ?", Offer.class);
-        query.setParameter(1,  amount);
-
-        return query.getResultList();
-    }
-
-    @Override
-    public List<Offer> findOffersByPrice(int amount) {
-        Query query = entityManager.createNativeQuery("SELECT *, ROUND((1 - (price / oldprice))*100,2) discountpercentage " +
-                "FROM offer " +
-                "WHERE offer_id IN (SELECT offer_id FROM picture GROUP BY offer_id HAVING count(*)>3) AND price < oldprice " +
-                "ORDER BY discountpercentage DESC " +
-                "LIMIT ?", Offer.class);
-        query.setParameter(1,  amount);
-
+        query.setParameter(1, amount);
         return query.getResultList();
     }
 

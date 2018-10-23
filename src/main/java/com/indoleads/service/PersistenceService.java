@@ -23,11 +23,13 @@ import javax.transaction.Transactional;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Class that is responsible for the persistence of the input feed
+ */
 @Service
-@PersistenceContext(type= PersistenceContextType.EXTENDED)
+@PersistenceContext(type = PersistenceContextType.EXTENDED)
 public class PersistenceService {
     private Logger logger = LoggerFactory.getLogger(XmlFormatter.class);
-
     private Formatter formatter;
     private ShopRepository shopRepository;
     private CategoryRepository categoryRepository;
@@ -36,10 +38,10 @@ public class PersistenceService {
     private OfferRepository offerRepository;
     private PictureRepository pictureRepository;
 
-    Catalog catalog;
-    String inputFile = "D:\\stageProject\\IndoBids-XmlPersistentie\\src\\main\\resources\\2018-08-26_gear_best_5b3b041a7c4b9622d4722ebd.xml";
+    private Catalog catalog;
+    private String inputFile = "D:\\stageProject\\IndoBids-XmlPersistentie\\src\\main\\resources\\2018-08-26_gear_best_5b3b041a7c4b9622d4722ebd.xml";
+    private Shop shop;
 
-    Shop shop;
     @Autowired
     public PersistenceService(Formatter formatter, ShopRepository shopRepository, CategoryRepository categoryRepository, CurrencyRepository currencyRepository, OfferParameterRepository offerParameterRepository, OfferRepository offerRepository, PictureRepository pictureRepository) {
         this.formatter = formatter;
@@ -49,7 +51,6 @@ public class PersistenceService {
         this.offerParameterRepository = offerParameterRepository;
         this.offerRepository = offerRepository;
         this.pictureRepository = pictureRepository;
-
         catalog = formatter.formatToObject(inputFile);
         shop = createShop();
         /*
@@ -62,11 +63,11 @@ public class PersistenceService {
         */
     }
 
-
-    private void fillShopTable(){
+    private void fillShopTable() {
         shopRepository.save(shop);
     }
-    private void fillCurrencyTable(){
+
+    private void fillCurrencyTable() {
         List<Currency> currencies = catalog.getShop().getCurrencies().getCurrencies();
         for (int i = 0; i < currencies.size(); i++) {
             Currency currency = new Currency();
@@ -78,7 +79,7 @@ public class PersistenceService {
         currencyRepository.flush();
     }
 
-    private void fillCategoryTable(){
+    private void fillCategoryTable() {
         List<Category> allCategories = catalog.getShop().getCategories().getCategories();
         List<Category> categories = new ArrayList<>();
         for (int i = 0; i < allCategories.size(); i++) {
@@ -94,7 +95,7 @@ public class PersistenceService {
         categoryRepository.flush();
     }
 
-    private void fillOfferTable(){
+    private void fillOfferTable() {
         List<Offer> offers = new ArrayList<>();
         //catalog.getShop().getOffers().getOffers().size()
         for (int i = 0; i < catalog.getShop().getOffers().getOffers().size(); i++) {
@@ -129,17 +130,14 @@ public class PersistenceService {
         offerRepository.flush();
     }
 
-
-    private void fillPictureTable(){
+    private void fillPictureTable() {
         List<Picture> pictureList = new ArrayList<>();
         List<Offer> offers = offerRepository.findAll();
-
-
         for (Offer offer : offers) {
             for (Offer o : catalog.getShop().getOffers().getOffers()) {
-                if (offer.getId().equals(o.getId())){
+                if (offer.getId().equals(o.getId())) {
 
-                    if (o.getPictures() != null){
+                    if (o.getPictures() != null) {
                         for (Picture picture : o.getPictures()) {
                             Picture p = new Picture();
                             p.setUrl(picture.getUrl());
@@ -150,21 +148,19 @@ public class PersistenceService {
                 }
             }
             logger.info("Pictures toegevoegd voor offer id" + offer.getId());
-
         }
         pictureRepository.save(pictureList);
         pictureRepository.flush();
     }
 
-    private void fillOfferParameterTable(){
+    private void fillOfferParameterTable() {
         List<OfferParameter> offerParameterList = new ArrayList<>();
         List<Offer> offers = offerRepository.findAll();
-
         for (Offer offer : offers) {
             for (Offer o : catalog.getShop().getOffers().getOffers()) {
-                if (offer.getId().equals(o.getId())){
+                if (offer.getId().equals(o.getId())) {
 
-                    if (o.getOfferParameters() != null){
+                    if (o.getOfferParameters() != null) {
                         for (OfferParameter offerParameter : o.getOfferParameters()) {
                             OfferParameter op = new OfferParameter();
                             op.setName(offerParameter.getName());
@@ -173,25 +169,21 @@ public class PersistenceService {
                             offerParameterList.add(op);
                         }
                     }
-
                 }
             }
 
         }
-
         offerParameterRepository.save(offerParameterList);
         offerParameterRepository.flush();
     }
 
-
-    private Shop createShop(){
+    private Shop createShop() {
         Shop shop = new Shop();
         shop.setName(catalog.getShop().getName());
         shop.setCategoryList(catalog.getShop().getCategories().getCategories());
         shop.setCurrencyList(catalog.getShop().getCurrencies().getCurrencies());
         shop.setLocal_delivery_cost(catalog.getShop().getLocal_delivery_cost());
         shop.setUrl(catalog.getShop().getUrl());
-
         return shop;
     }
 }
